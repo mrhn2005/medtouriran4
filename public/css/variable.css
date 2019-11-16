@@ -1,0 +1,64 @@
+:root{
+    /*--degree : 270deg;*/
+    --title-color: #2AEFC8;
+    --title-color2: #22c3a2;
+    --primary-color: #32c1ce;
+    --gray-color: #bcbcbc;
+
+    --p-text: #115e4d;
+    --bold-text: #707070;
+
+
+    /*#00aa89*/
+    /*#00ffbc 30%*/
+
+    --first-color: #00cccc;
+    --first-color2: #00a5a5;
+
+    --second-color: #01C2DB;
+    --second-color2: #0190a5;
+
+    --third-color: #00ffbc;
+    --third-color2: #00aa89;
+
+    --medical-color: #11cb96;
+    --medical-color2: rgba(17, 203, 150, 0.75);
+    --cosmetic-color: #01c2d8;
+    --cosmetic-color2: rgba(1, 194, 216, 0.76);
+
+    --border-color : #55555517;
+    --shadow : rgba(0, 0, 0, 0.1);
+
+    --background-gradient-1 : linear-gradient(var(--degree2 ,119deg), var(--first-color), var(--third-color));
+    /*--background-gradient-2 : linear-gradient(var(--degree,90deg), rgba(0, 108, 134, 0.6), rgba(3, 162, 129, 0.6));*/
+    --background-gradient-2 : linear-gradient(180deg, rgba(0, 65, 52, 0.51), rgba(27, 221, 183, 0.75));
+    --background-gradient-3 : linear-gradient(-60deg, rgba(0, 65, 52, 0.6), rgba(27, 221, 183, 0.75));
+
+    --background-gradient-cosmetic : linear-gradient(var(--degree,90deg), var(--second-color), rgba(0, 205, 255, 0.30));
+    --background-gradient-cosmetic-rev : linear-gradient(var(--degree,90deg), rgba(0, 205, 255, 0.30), var(--second-color));
+    --button-gradient-cosmetic : linear-gradient(var(--degree,90deg), var(--second-color2), var(--second-color));
+
+    --background-gradient-medical : linear-gradient(var(--degree,90deg), #00aa89,rgba(0, 255, 188, 0.3));
+    --background-gradient-medical-rev : linear-gradient(var(--degree,90deg),rgba(0, 255, 188, 0.3), #00aa89);
+    --button-gradient-medical : linear-gradient(var(--degree,90deg), var(--third-color2), var(--third-color));
+
+    --card-gradient-medical : linear-gradient(90deg, var(--medical-color),transparent);
+    --card-gradient-cosmetic : linear-gradient(90deg,var(--cosmetic-color),transparent);
+
+
+    /*--tehran-gradient : linear-gradient(var(--degree,90deg),#E06961, rgba(224, 105, 97, 0.75),transparent);*/
+    /*--mashhad-gradient : linear-gradient(var(--degree,90deg),#C7994A, rgba(199, 153, 74, 0.75),transparent);*/
+    /*--shiraz-gradient : linear-gradient(var(--degree,90deg),#2E84BD, rgba(46, 132, 189, 0.75),transparent);*/
+
+    --tehran-gradient2 : linear-gradient(var(--degree,90deg), rgba(255, 141, 133, 0.81), rgba(238, 93, 83, 0.8));
+    --mashhad-gradient2 : linear-gradient(var(--degree,90deg), rgba(255, 213, 141, 0.8), rgba(199, 153, 74, 0.8));
+    --shiraz-gradient2 : linear-gradient(var(--degree,90deg), rgba(132, 206, 255, 0.81), rgba(46, 132, 189, 0.8));
+
+    --tehran-gradient : linear-gradient(var(--degree,90deg),#E06961, rgba(224, 105, 97, 0.61),transparent);
+    --mashhad-gradient : linear-gradient(var(--degree,90deg),#C7994A, rgba(199, 153, 74, 0.6),transparent);
+    --shiraz-gradient : linear-gradient(var(--degree,90deg),#2E84BD, rgba(46, 132, 189, 0.6),transparent);
+
+    --tehran : #EE5D53;
+    --mashhad : #C7994A;
+    --shiraz : #2E84BD;
+}

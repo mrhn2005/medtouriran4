@@ -1,0 +1,405 @@
+
+
+
+
+.theme-material-card p {
+    text-align: left;
+}
+.theme-material-card h3{
+    text-align: left;
+}
+
+.comment-detail{
+    text-align: left;
+}
+.comment-meta span {
+    margin: 0 14px 0 0;
+}
+.comment-meta span:nth-last-child(1) {
+    padding: 0 16px 0 0;
+    border-left: none;
+    border-right: 1px solid #DDD;
+}
+
+#hm-slider .mdl-selectfield__label {
+    bottom: 0;
+    color: rgba(0,0,0, 0.26);
+    font-size: 17px;
+    /*left: 18px;*/
+    right: 0;
+    pointer-events: none;
+    position: absolute;
+    display: block;
+    /*top: 27px;*/
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: left;
+}
+
+/*.category-list li span {*/
+/*    float: right;*/
+/*}*/
+/***** home treatment styles ******/
+.hm-treatment--card-content {
+    text-align: left;
+}
+.hm-treatment--card{
+    box-shadow: 1px 3px 4px 0px rgba(136, 136, 136, 0.3);
+}
+.hm-treatment--card:hover{
+    box-shadow: 1px 10px 10px 0px rgba(136, 136, 136, 0.25);
+    transition: linear .5s;
+    transform: translateY(-3px);
+}
+
+/***** home packages styles ******/
+#hm-packages-slider .hm-packages {
+    text-align: left;
+    box-shadow: -9px 11px 5px 0px var(--shadow);
+}
+
+#hm-packages-slider .medical .hm-packages--overlay{
+    left: -20px;
+    background: var(--background-gradient-medical);
+    border-radius:  25px 15px 15px 25px;
+}
+/*#hm-packages-slider .medical .hm-packages--overlay2{*/
+/*    left: 100px;*/
+/*    background: var(--background-gradient-medical);*/
+/*}*/
+
+#hm-packages-slider .cosmetic .hm-packages--overlay{
+    left: -20px;
+    background: var(--background-gradient-cosmetic);
+    border-radius:  25px 15px 15px 25px;
+}
+/*#hm-packages-slider .cosmetic .hm-packages--overlay2{*/
+/*    left: 100px;*/
+/*    background: var(--background-gradient-cosmetic);*/
+/*}*/
+
+
+
+#hm-packages-slider .hm-packages--title{
+    left: 100px;
+    text-align: left;
+}
+#hm-packages-slider .hm-packages--title>h2 {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.75);
+}
+#hm-packages-slider .hm-packages--title>p {
+    left: -80px;
+}
+#hm-packages-slider .hm-packages--city{
+    left: -110px;
+}
+#hm-packages-slider .hm-packages--city>li{
+    text-align: left;
+}
+#hm-packages-slider .hm-packages--city>li>img{
+    float: left;
+}
+#hm-packages-slider .medical .hm-packages--price{
+    right: -15px;
+    background: var(--background-gradient-medical-rev);
+}
+#hm-packages-slider .cosmetic .hm-packages--price{
+    right: -15px;
+    background: var(--background-gradient-cosmetic-rev);
+}
+#hm-packages-slider .hm-packages--price>p:first-child {
+    left:10px;
+}
+#hm-packages-slider .hm-packages--price>p {
+    left: -54px;
+}
+#hm-packages-slider .hm-packages--price>h3 {
+    text-align: center;
+    /*left: 50%;*/
+}
+#hm-packages-slider .hm-packages--list{
+    left: 100px;
+}
+
+.hm-packages--button{
+    left: 28px;
+}
+.medical .hm-packages--button div{
+    background: var(--button-gradient-medical);
+}
+.cosmetic .hm-packages--button div{
+    background: var(--button-gradient-cosmetic);
+}
+
+#hm-video-sample .video-sample-detail i {
+    margin: 0 10px 2px 0px;
+}
+#hm-video-sample .video-bg1::before {
+    right: 52vw;
+}
+#hm-video-sample .video-bg-v::before {
+    right: 61vw;
+}
+#hm-video-sample .video-bg2::before {
+    left: 96vw;
+}
+
+
+/***** Packages page packages styles ******/
+#package-page--packages-slider .package-page--packages {
+    text-align: left;
+    box-shadow: 0 11px 7px 0px  var(--shadow);
+}
+#package-page--packages-slider .package-page--packages-title{
+    left: 40px;
+    text-align: left;
+}
+#package-page--packages-slider .package-page--packages-title>h2 {
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+}
+#package-page--packages-slider .package-page--packages-title>p {
+    left: -80px;
+}
+#package-page--packages-slider .package-page--packages-city{
+    left: -110px;
+}
+#package-page--packages-slider .package-page--packages-city>li{
+    text-align: left;
+}
+#package-page--packages-slider .package-page--packages-city>li>img{
+    float: left;
+}
+#package-page--packages-slider .package-page--packages-price{
+    right: -15px;
+}
+#package-page--packages-slider .package-page--packages-price>h3 {
+    text-align: center;
+    /*left: 50%;*/
+}
+#package-page--packages-slider .package-page--packages-list{
+    left: 40px;
+}
+
+.package-page--packages-button{
+    left: 28px;
+}
+.package-page--packages-button button{
+    font-size: 14px!important;
+}
+
+
+
+/***** procedure styles ******/
+#procedure-page--packages-slider .procedure-page--packages {
+    text-align: left;
+    box-shadow: -9px 11px 5px 0px var(--shadow);
+}
+
+#procedure-page--packages-slider .medical .procedure-page--packages-overlay{
+    left: -20px;
+    background: var(--background-gradient-medical);
+    border-radius:  25px 15px 15px 25px;
+}
+#procedure-page--packages-slider .cosmetic .procedure-page--packages-overlay{
+    left: -20px;
+    background: var(--background-gradient-cosmetic);
+    border-radius:  25px 15px 15px 25px;
+}
+
+#procedure-page--packages-slider .procedure-page--packages-title{
+    left: 100px;
+    text-align: left;
+}
+#procedure-page--packages-slider .procedure-page--packages-title>h2 {
+    text-shadow: 3px 3px 6px rgba(0, 128, 173, 0.51);
+}
+#procedure-page--packages-slider .procedure-page--packages-title>p {
+    left: -80px;
+}
+#procedure-page--packages-slider .procedure-page--packages-city{
+    left: -110px;
+}
+#procedure-page--packages-slider .procedure-page--packages-city>li{
+    text-align: left;
+}
+#procedure-page--packages-slider .procedure-page--packages-city>li>img{
+    float: left;
+}
+#procedure-page--packages-slider .medical .procedure-page--packages-price{
+    right: -15px;
+    background: var(--background-gradient-medical-rev);
+}
+#procedure-page--packages-slider .cosmetic .procedure-page--packages-price{
+    right: -15px;
+    background: var(--background-gradient-cosmetic-rev);
+}
+#procedure-page--packages-slider .procedure-page--packages-price>p:first-child {
+    left:10px;
+}
+#procedure-page--packages-slider .procedure-page--packages-price>p {
+    left: -35px;
+}
+#procedure-page--packages-slider .procedure-page--packages-price>h3 {
+    text-align: center;
+    /*left: 50%;*/
+}
+#procedure-page--packages-slider .procedure-page--packages-list{
+    left: 125px;
+}
+
+.procedure-page--packages-button{
+    left: 28px;
+}
+.medical .procedure-page--packages-button button{
+    background: var(--button-gradient-medical);
+}
+.cosmetic .procedure-page--packages-button button{
+    background: var(--button-gradient-cosmetic);
+}
+
+
+.category-list li span {
+    float: left;
+}
+
+.doctor-descreiption{
+    text-align: left;
+    padding: 0px 10px;
+}
+
+.fix-social-bar{
+    right: 20px!important;
+}
+
+.float{
+    float: left!important;
+}
+
+.float-rev{
+    float: right!important;
+}
+
+.fa-chevron-rl:before {
+    content: "\f054";
+}
+
+.menu li li a:hover {
+    padding-left: 10px !important;
+}
+
+.blog-post li {
+    text-align: left;
+}
+
+
+#hm-slider i.hm-angle-down {
+    float: right!important;
+    right: 11px!important;
+}
+.hdr-logo {
+    padding: 10px 0!important;
+    float: left!important;
+}
+.hdr-menu {
+    float: left!important;
+    margin-left: 20px;
+}
+#mobile-menu--logo {
+    right: 20px;
+}
+
+#mobile-menu--lang {
+    left: 60px;
+}
+#mobile-menu--bar {
+    left: 10px;
+}
+#mobile-menu--menu {
+    border-right: 2px solid #ffffffab;
+}
+#mobile-menu--tbl-cell {
+    position: absolute;
+    left: -130%;
+    padding: 0 0 0 50px;
+}
+.mobile-menu-close {
+    left: 10px;
+}
+.text-left{
+    text-align: left !important;
+}
+
+.doctor-details-extra .fas {
+    padding: 0 10px 0 0;
+}
+
+#template-content h4,#template-content h2,#template-content p ,#template-content ul  {
+    text-align: left !important;
+}
+@media screen and (max-width : 426px) {
+    #template-content h4,#template-content h2,#template-content p ,#template-content ul {
+        padding-left: 10px !important;
+    }
+}
+
+
+/********new style HOTELS page*********/
+
+#hotels-page .hotels-page-card{
+    text-align: left;
+}
+
+#hotels-page .hotels-facilities p span{
+    margin-right: 2px;
+}
+
+/********new style Doctors page*********/
+#doctors-page .doctors-page-card{
+    text-align: left;
+}
+
+#doctors-page .doctors-page-options{
+    text-align: left;
+}
+#doctors-page .doctors-page-speciality{
+    right: 15px;
+    top: 15px;
+}
+#doctors-page .doctor-page-details-extra img{
+    margin-right: 15px;
+}
+
+
+
+#packages-page .packages-page-card{
+    text-align: left;
+}
+#packages-page .packages-page--card .packages-page--title {
+    left: 45px;
+    text-align: left;
+}
+#packages-page .packages-page--card .packages-page--cities span {
+    text-align: left;
+}
+#packages-page .packages-page--card .packages-page--text {
+    margin-right: 12px !important;
+}
+#packages-page .packages-page--price{
+    float: right;
+}
+#packages-page .packages-page--options{
+    text-align: left;
+}
+#packages-page .packages-page--options p i{
+    margin-right: 12px;
+}
+
+#package-page .package-page--price-table tr td {
+    text-align: left !important;
+}
+.mdl-textfield__error {
+    text-align: right;
+    float:right;
+    position: relative;
+}

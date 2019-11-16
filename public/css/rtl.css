@@ -1,0 +1,579 @@
+
+
+:root{
+    --degree: -90deg;
+    --degree2: -61deg;
+    --degree3: 180deg;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600 !important;
+}
+.paragraph-small {
+    font-size: 14px;
+}
+.blog-full-description {
+    text-align: right !important;
+}
+
+.theme-material-card p{
+    text-align: right;
+}
+.theme-material-card h3{
+    text-align: right;
+}
+
+#hm-slider .slider-info p {
+    font-size: 19px;
+}
+.comment-detail{
+    text-align: right;
+}
+.comment-meta span {
+    margin: 0 0 0 14px;
+}
+.comment-meta span:nth-last-child(1) {
+    padding: 0 16px 0 0;
+    border-right: 1px solid #DDD;
+    border-left: none;
+}
+.doctor-descreiption{
+    text-align: right;
+    padding: 0px 10px;
+}
+
+.category-list li {
+    text-align: right !important;
+    list-style: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #EEE;
+    font-weight: 500;
+    color: #757575;
+}
+
+.filter-menu button {
+    font-size: 13px;
+    font-weight: 600;
+}
+/*****  procedure styles ******/
+.category-list li span {
+    float: right;
+}
+
+#procedure-page--packages-slider .procedure-page--packages {
+    text-align: right;
+    box-shadow: 9px 11px 5px 0 var(--shadow);
+}
+
+#procedure-page--packages-slider .medical .procedure-page--packages-overlay{
+    right: -20px;
+    background: var(--background-gradient-medical);
+    border-radius: 15px 25px 25px 15px ;
+}
+#procedure-page--packages-slider .cosmetic .procedure-page--packages-overlay{
+    right: -20px;
+    background: var(--background-gradient-cosmetic);
+    border-radius: 15px 25px 25px 15px;
+}
+#procedure-page--packages-slider .procedure-page--packages-title{
+    right: 100px;
+    text-align: right;
+}
+#procedure-page--packages-slider .procedure-page--packages-title>h2 {
+    text-shadow: -3px 3px 6px rgba(0, 128, 173, 0.51);
+}
+#procedure-page--packages-slider .procedure-page--packages-title>p {
+    right: -80px;
+}
+#procedure-page--packages-slider .procedure-page--packages-city{
+    right: -110px;
+}
+#procedure-page--packages-slider .procedure-page--packages-city>li{
+    text-align: right;
+}
+#procedure-page--packages-slider .procedure-page--packages-city>li>img{
+    float: right;
+}
+#procedure-page--packages-slider .medical .procedure-page--packages-price{
+    left: -15px;
+    background: var(--background-gradient-medical);
+}
+#procedure-page--packages-slider .cosmetic .procedure-page--packages-price{
+    left: -15px;
+    background: var(--background-gradient-cosmetic);
+}
+#procedure-page--packages-slider .procedure-page--packages-price>p:first-child {
+    right:10px;
+}
+#procedure-page--packages-slider .procedure-page--packages-price>p {
+    right: -35px;
+}
+#procedure-page--packages-slider .procedure-page--packages-price>h3 {
+    text-align: center;
+
+}
+#procedure-page--packages-slider .procedure-page--packages-list{
+    right: 100px;
+    font-size: 14px;
+}
+
+.procedure-page--packages-button{
+    right: 28px;
+}
+.medical .procedure-page--packages-button button{
+    background: var(--button-gradient-medical);
+}
+.cosmetic .procedure-page--packages-button button{
+    background: var(--button-gradient-cosmetic);
+}
+
+ul.menu{
+    padding: 0!important
+}
+
+.fix-social-bar{
+    left: 20px!important;
+}
+[class^="flaticon-"] {
+    padding: 0 0 0 10px !important;
+}
+
+
+
+#mobile-menu--logo {
+    left: 20px;
+}
+#mobile-menu--menu {
+    border-left: 2px solid #ffffffab;
+}
+#mobile-menu--lang {
+    right: 60px;
+}
+#mobile-menu--bar {
+    right: 10px;
+}
+#mobile-menu--tbl-cell {
+    right: -130%;
+    padding: 0 50px 0 0 ;
+}
+.mobile-menu-close {
+    right: 10px;
+}
+/****** HOME   *******/
+
+
+
+/***** home treatment styles ******/
+.hm-treatment--card-content {
+    text-align: right;
+    transform: scaleX(-1);
+}
+.hm-treatment--card{
+    box-shadow: -1px 3px 4px 0px rgba(136, 136, 136, 0.3);
+    transform: scaleX(-1);
+}
+.hm-treatment--card:hover{
+    box-shadow: -1px 10px 10px 0px rgba(136, 136, 136, 0.25);
+    transition: linear .5s;
+    transform: translateY(-3px) scaleX(-1);
+}
+
+
+.hm-about-number {
+    padding: 0 20px 0 0 !important;
+    text-align: right !important;
+}
+
+
+#hm-video-sample .video-sample-detail i {
+    margin: 0 0px 2px 10px;
+}
+#hm-video-sample .video-bg1::before {
+    left: 52vw;
+}
+#hm-video-sample .video-bg-v::before {
+    left: 61vw;
+}
+#hm-video-sample .video-bg2::before {
+    right: 96vw;
+}
+
+.timetable li a .fa {
+    float: left;
+    line-height: 20px;
+}
+.float{
+    float: right!important;
+}
+
+.text-right{
+    text-align: left !important;
+}
+.text-left{
+    text-align: right !important;
+}
+
+.float-rev{
+    float: left!important;
+}
+.anchor-icon .fa {
+    margin: 0 5px 0 0;
+}
+.fa-arrow-right:before {
+    content: "\f060" !important;
+}
+.fa-arrow-left:before {
+    content: "\f061" !important;
+}
+
+
+#hm-slider i.hm-icon {
+    padding: 0 6px 0 10px!important;
+    right: 6px !important;
+}
+
+#hm-slider i.hm-angle-down {
+    float: left!important;
+    left: 11px!important;
+}
+
+#hm-slider .mdl-selectfield__label {
+    right: 0;
+    padding: 8px 38px 8px 0!important;
+    top: 18px;
+    text-align: right!important;
+}
+
+
+/***** home packages styles ******/
+
+#hm-packages-slider .hm-packages {
+    text-align: right;
+    box-shadow: 9px 11px 5px 0px var(--shadow);
+}
+
+#hm-packages-slider .hm-packages.cosmetic .hm-packages--overlay{
+    position: absolute;
+    right: -20px;
+    background: var(--background-gradient-cosmetic);
+    border-radius: 15px 25px 25px 15px;
+}
+#hm-packages-slider .hm-packages.cosmetic .hm-packages--overlay2{
+    right: 100px;
+    background: var(--background-gradient-cosmetic);
+}
+#hm-packages-slider .hm-packages.medical .hm-packages--overlay{
+    position: absolute;
+    right: -20px;
+    background: var(--background-gradient-medical);
+    border-radius: 15px 25px 25px 15px;
+}
+#hm-packages-slider .hm-packages.medical .hm-packages--overlay2{
+    right: 100px;
+    background: var(--background-gradient-medical);
+}
+#hm-packages-slider .hm-packages--title{
+    right: 100px;
+    text-align: right;
+}
+#hm-packages-slider .hm-packages--title>h2 {
+    text-shadow: -2px 2px 3px rgba(0, 0, 0, 0.75);
+}
+#hm-packages-slider .hm-packages--title>p {
+    right: -80px;
+}
+#hm-packages-slider .hm-packages--city{
+    right: -110px;
+}
+#hm-packages-slider .hm-packages--city>li{
+    text-align: right;
+}
+#hm-packages-slider .hm-packages--city>li>img{
+    float: right;
+}
+#hm-packages-slider .hm-packages.cosmetic .hm-packages--price{
+    left: -15px;
+    /*border-radius: 10px;*/
+    background: var(--background-gradient-cosmetic-rev);
+}
+#hm-packages-slider .hm-packages.medical .hm-packages--price{
+    left: -15px;
+    /*border-radius: 10px;*/
+    background: var(--background-gradient-medical-rev);
+}
+#hm-packages-slider .hm-packages--price>p:first-child {
+    right: 10px;
+}
+#hm-packages-slider .hm-packages--price>p {
+    right: -54px;
+}
+#hm-packages-slider .hm-packages--price>h3 {
+    text-align: right;
+}
+#hm-packages-slider .hm-packages--list{
+    right: 100px;
+    font-size: 14px;
+}
+
+.hm-packages--button{
+    right: 28px;
+}
+.hm-packages--button div{
+    background: var(--button-gradient-cosmetic);
+}
+.hm-packages.medical .hm-packages--button div{
+    background: var(--button-gradient-medical);
+}
+
+
+/***** Package page packages styles ******/
+
+#package-page--packages-slider .package-page--packages {
+    text-align: right;
+    box-shadow: 9px 11px 5px 0px var(--shadow);
+}
+
+#package-page--packages-slider .package-page--packages-title{
+    right: 40px;
+    text-align: right;
+}
+#package-page--packages-slider .package-page--packages-title>h2 {
+    text-shadow: -2px 2px 3px rgba(0, 0, 0, 0.75);
+}
+#package-page--packages-slider .package-page--packages-price{
+    left: -15px;
+}
+#package-page--packages-slider .package-page--packages-price>h3 {
+    text-align: right;
+}
+#package-page--packages-slider .package-page--packages-list{
+    right: 40px;
+    font-size: 14px;
+}
+
+.package-page--packages-button{
+    right: 28px;
+}
+.menu > li > a {
+    font-size: 16px !important;
+    font-family: 'Tajawal', sans-serif !important;
+}
+.menu li li a:hover {
+    padding-right:10px !important;
+}
+.menu li li a::before {
+    right: 0!important;
+}
+.menu-dropdown li {
+    padding: 5px 10px 5px 5px!important;
+}
+.menu li li a {
+    text-align: right!important;
+    font-family: 'Tajawal', sans-serif !important;
+}
+
+.fa-chevron-rl:before {
+    content: "\f053";
+}
+
+.menu-dropdown .menu-dropdown {
+    top: 0;
+    left: -101%!important;
+    margin-right: 3px!important;
+    margin-left: 0!important
+}
+ul .menu-dropdown-2 {
+    right: 99% !important;
+}
+
+.menu-megamenu, .menu-dropdown {
+    right: 5%!important;
+    text-align: right !important;
+}
+#header-1 .menu a,#mobile-menu--hdr .menu a {
+    font-weight: 600!important;
+}
+.hdr-logo {
+    display: inline-block!important;
+    float: right!important;
+    padding: 15px 0!important;
+    /*margin: 6px 0 2px 0px!important;*/
+}
+.hdr-menu {
+    float: right!important;
+    margin-right: 20px;
+}
+
+.theme-dropcap {
+    font-size: 60px;
+    float: right!important;
+    color: #32C1CE;
+    line-height: 60px;
+    padding: 0 10px;
+    margin-left: 10px!important;
+    margin-right: 0!important;
+}
+
+.blog-card-date {
+    right: 0!important;
+    border-bottom-left-radius: 50%!important;
+    border-bottom-right-radius: 0!important;
+}
+.blog-recent-post {
+    text-align: right;
+    /*padding: 0 0 0 10px;*/
+}
+
+.blog-card-ttl h3 {
+    text-align: right!important;
+}
+
+
+.blog-post li {
+    text-align: right;
+}
+
+.blog-card-details p .fa {
+    padding: 0 0 0 5px;
+    font-size: 18px;
+}
+
+
+.mdl-textfield__input,.mdl-textfield__label {
+    text-align: right!important;
+}
+
+.mdl-textfield__error , .mdl-textfield__info{
+    left: 0!important;
+    text-align: left!important;
+}
+
+.form-input-icon {
+    width: 100%;
+    padding: 20px 30px 20px 0!important;
+}
+
+.form-input-icon label {
+    right: 30px!important;
+    left: 0!important;
+}
+.form-input-icon .fa {
+    right: 0!important;
+}
+
+.mdl-selectfield__label {
+
+    text-align: right!important;
+}
+
+.modal-header .close {
+    padding: 15px;
+    margin: -15px auto -15px -15px!important;
+    font-size: 30px!important
+}
+
+
+/*****DEstinations*****/
+
+.card-body {
+    text-align: right!important;
+}
+
+/********* patients review**********/
+#patients-review-page .patients-review--info{
+    text-align: right;
+}
+
+.social-list .social-list-sm> ul{
+    float: left !important;
+}
+
+
+.doctor-details-extra .fas {
+    padding: 0 0 0 10px;
+}
+
+#template-content h4,#template-content h2,#template-content p ,#template-content ul {
+    text-align: right !important;
+}
+@media screen and (max-width : 426px) {
+    #template-content h4,#template-content h2,#template-content p ,#template-content ul {
+        padding-right: 10px !important;
+    }
+}
+#template-content ul:first-child a {
+    font-weight: 700 !important;
+}
+#template-content .template-ul li {
+    font-size: 16px !important;
+}
+#template-content .template-p {
+    line-height: 1.8 !important;
+    font-size: 17px !important;
+}
+
+.blog-detail li .fa {
+    margin: 0 0 0 5px !important;
+}
+
+#hm-search .mdl-selectfield__label {
+    padding: 8px  38px 8px 0 !important;
+}
+
+/********new style HOTELS page*********/
+#hotels-page .hotels-page-card{
+    text-align: right;
+}
+
+#hotels-page .hotels-facilities p span{
+    margin-left: 2px;
+}
+#hotels-page .hotels-name h3 {
+    font-size: 22px;
+}
+/********new style Doctors page*********/
+
+
+#doctors-page .doctors-page-card{
+    text-align: right;
+}
+
+#doctors-page .doctors-page-options{
+    text-align: right;
+}
+#doctors-page .doctors-page-speciality{
+    left: 15px;
+    top: 15px;
+}
+#doctors-page .doctor-page-details-extra img{
+    margin-left: 15px;
+}
+
+#packages-page .packages-page-card{
+    text-align: right;
+}
+#packages-page .packages-page--card .packages-page--title {
+    right: 45px;
+    text-align: right;
+}
+#packages-page .packages-page--card .packages-page--cities span {
+    text-align: right;
+}
+#packages-page .packages-page--card .packages-page--text {
+    margin-left: 12px !important;
+}
+#packages-page .packages-page--price{
+    float: left;
+}
+#packages-page .packages-page--options{
+    text-align: right;
+}
+#packages-page .packages-page--options p i{
+    margin-left: 12px;
+}
+
+#package-page .package-page--price-table tr td {
+    text-align: right!important;
+}
