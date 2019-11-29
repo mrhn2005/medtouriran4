@@ -88,7 +88,7 @@ button{
     font-family: Nunito,sans-serif !important;
     word-spacing: 2.5px;
 }
-.template-title {
+.template-title , #template-content h3{
     margin: 19px 20px;
     font-size: 21px;
     text-transform: capitalize;
@@ -99,14 +99,14 @@ button{
 #template-content ul:first-child a {
     color: var(--p-text);
     line-height: 35px;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
     letter-spacing: .1px;
     transition: all .5s;
 }
 #template-content ul:first-child a:hover {
     color: var(--title-color2);
-    padding: 0 6px;
+    padding: 0 7px;
 }
 #template-content ul li {
     list-style: none;
@@ -120,17 +120,17 @@ button{
     font-size: 16px;
     list-style: circle;
 }
-#template-content .template-list li{
-}
+
 #template-content h2{
     text-transform: capitalize;
     margin: 45px 0 30px !important;
 }
 #template-content h3{
     text-transform: capitalize;
-    margin: 50px 10px 15px !important;
+    margin: 50px 10px 0px!important;
+    font-size: 24px !important;
 }
-#template-content .template-p{
+#template-content .template-p,#template-content p{
     margin: 19px 10px !important;
     line-height: 1.6;
     /*text-align: justify;*/
@@ -138,17 +138,14 @@ button{
     color: #525252;
     /*word-spacing: 3px;*/
 }
-#template-content p{
-    margin: 0px 40px 45px;
-}
-#template-content .template-ul{
+#template-content .template-ul,#template-content ul{
     /*text-transform: capitalize;*/
     margin: 8px 0px;
     font-size: 14px;
     line-height: 2;
     list-style: circle;
 }
-#template-content .template-ul ul{
+#template-content .template-ul ul,#template-content ul ul{
     padding: 0 !important;
 }
 #template-content .template-ul li{
@@ -158,12 +155,18 @@ button{
     margin: 16px auto;
     font-size: 14px;
 }
-#template-content .template-ul li:before {
+#template-content ul li {
+    word-spacing: 3px;
+    line-height: 15px !important;
+    margin: 0px auto;
+    font-size: 14px;
+}
+#template-content .template-ul li:before,#template-content ul li:before {
     content: "\25BA \0020";
     font-size: 15px;
     color: var(--title-color2);
 }
-#template-content .template-ul li ul {
+#template-content .template-ul li ul,#template-content ul li ul {
     margin: 20px 36px !important;
 }
 #template-content .template-ul li ul li{
@@ -189,27 +192,16 @@ button{
     flex-wrap: wrap;
     margin: 30px 0;
 }
-#template-content img {
-    /* width: 50%; */
-    height: auto;
-    display: block;
-    /*margin: 0 ;*/
-    border-radius: 5px;
-}
-#template-content .template-img img{
+
+#template-content .template-img img,#template-content img{
     min-width: 27%;
     height: 100%;
     max-height: 400px;
     margin: 3%;
+    border-radius: 5px;
+    height: auto;
+    display: block;
 }
-/*#template-content .template-img img:hover{*/
-/*    filter: blur(2px);*/
-/*}*/
-#template-content .template-images .template-image{
-}
-#template-content .template-images .template-image img{
-}
-
 
 /******** base settings********* */
 /*#hotels-page .theme-block-picture{*/

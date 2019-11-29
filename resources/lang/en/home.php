@@ -77,7 +77,7 @@ return [
     "page_not_found"=>"Page not found!!!",
     "back_home"=>"Go to Home",
     "our_hotels"=>"Our Hotels",
-    "patients_review"=>"Patient's review",
+    "patients_review"=>"Patient Reviews",
     "blog"=>"Blog",
     "blogs"=>"Blogs",
     "procedures"=>"Procedures",
