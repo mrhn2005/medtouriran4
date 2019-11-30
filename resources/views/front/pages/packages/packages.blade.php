@@ -33,7 +33,7 @@
 {{--                    <div class="">--}}
                         <div class="packages-page--card {{$package->css_class()}} flex-item-1 t-filter c-filter
                             @foreach($package->categories as $category){{Helper::remove_space($category->parent_id!=null?$category->parent->title:$category->title)}} @endforeach">
-                            <div class="packages-page-card--pic lazy" data-bg="linear-gradient(180deg,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.65)),
+                            <div class="packages-page-card--pic lazy"  data-bg="linear-gradient(180deg,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.65)),
                                  url('{{Helper::placeholder(Voyager::image($package->background))}}')">
                                 <div class="packages-page--price">
                                     @if(!$is_rtl)

@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace App\Helpers;
 
@@ -13,7 +13,7 @@ class Helper
     //determine if right align language is used for styling and ordering, RTL language can be added in app/config
     public static function isRtl()
     {
-        if(array_key_exists(App::getLocale(), config('app.rtlLocales'))){
+        if (array_key_exists(App::getLocale(), config('app.rtlLocales'))) {
             return true;
         }
         
@@ -21,11 +21,12 @@ class Helper
     }
     
     //Front end menu view
-    public static function menu(){
+    public static function menu()
+    {
         $minutes=1;
-        $menu = Cache::remember('menu'.App::getLocale(), $minutes, function (){
+        $menu = Cache::remember('menu'.App::getLocale(), $minutes, function () {
             $categories= Category::withTranslations()->get();
-            return menu('front','front.common.menu',['categories'=>$categories]);
+            return menu('front', 'front.common.menu', ['categories'=>$categories]);
         });
         
         return $menu;
@@ -33,30 +34,32 @@ class Helper
     
     // image handler
     
-    public static function placeholder($image){
-        if($image){
-            if(file_exists(public_path() .$image)){
-            return $image;
+    public static function placeholder($image)
+    {
+        if ($image) {
+            if (file_exists(public_path() .$image)) {
+                return $image;
             }
-        }   
+        }
+        return $image;
         return '/uploads/service-1.jpg';
     }
 
 
-    public static function remove_space($name){
+    public static function remove_space($name)
+    {
         return preg_replace('/\s+/', '', $name);
     }
 
-    public static function color_badge($index){
-
+    public static function color_badge($index)
+    {
         $colors=array("warning","info","danger","success");
 
         return $colors[$index%count($colors)];
     }
 
-    public static function get_locale_url($locale,$url){
-
- 
+    public static function get_locale_url($locale, $url)
+    {
         $segments = str_replace(url('/'), '', $url);
         $segments = array_filter(explode('/', $segments));
             
@@ -65,8 +68,9 @@ class Helper
         return url(implode('/', $segments));
     }
 
-    public static function lazy_image($content){
-        $content=preg_replace('~<img[^>]*\K(?=src)~i','data-',$content);
+    public static function lazy_image($content)
+    {
+        $content=preg_replace('~<img[^>]*\K(?=src)~i', 'data-', $content);
         return $content;
     }
 }

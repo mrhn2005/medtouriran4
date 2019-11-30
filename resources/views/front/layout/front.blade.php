@@ -14,6 +14,16 @@
     <!-- Favicon Icon -->
     <link rel="icon" type="image/png" href="/images/logo-color.png" />
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111472260-4"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-111472260-4');
+    </script>
+
     <!-- Crisp start -->
     <script>
     CRISP_RUNTIME_CONFIG = {
