@@ -506,10 +506,10 @@ ul .menu-dropdown-2 {
 #template-content ul:first-child a {
     font-weight: 700 !important;
 }
-#template-content .template-ul li {
+#template-content .template-ul li,#template-content ul li {
     font-size: 16px !important;
 }
-#template-content .template-p {
+#template-content .template-p,#template-content p  {
     line-height: 1.8 !important;
     font-size: 17px !important;
 }
