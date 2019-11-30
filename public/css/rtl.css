@@ -429,7 +429,9 @@ ul .menu-dropdown-2 {
 .blog-card-ttl h3 {
     text-align: right!important;
 }
-
+.blog-tag {
+    text-align: right !important;
+}
 
 .blog-post li {
     text-align: right;
