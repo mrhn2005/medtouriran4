@@ -27,13 +27,13 @@ return [
     "testimonial"=>"Testimonial",
     "testimonial_sub"=>"Our Happy Clients Tell About Us",
 //    "doctors"=>"Our Qualified Doctors",
-    "doctors_sub"=>"Meet with All Our Qualified Doctors",
+//    "doctors_sub"=>"Meet with All Our Qualified Doctors",
     "departments"=>"Our Departments",
-    "departments_sub"=>"We have All Major Departments to Serve Patients",
+//    "departments_sub"=>"We have All Major Departments to Serve Patients",
     "partners"=>"Our Partners",
-    "partners_sub"=>"All Our Company Partners are Listed Below",
+//    "partners_sub"=>"All Our Company Partners are Listed Below",
     "news"=>"Latest News",
-    "news_sub"=>"See All Our Updated and Latest News",
+//    "news_sub"=>"See All Our Updated and Latest News",
     "important_links"=>"Important Links",
     'contact'=> 'Contact Us',
     "touch"=> 'Get in touch',
@@ -41,7 +41,7 @@ return [
 
     "inclusions"=>"inclusions",
     "pricing"=>"Pricing",
-    "testimonial"=>"Testimonial",
+//    "testimonial"=>"Testimonial",
     "our_offers"=>"Our Offers",
 
 
@@ -133,7 +133,6 @@ return [
     "all"=>"All",
     "videos"=>"Videos",
 
-    "package_in"=>"Package In",
     "our_location"=>"Our Location",
     "location"=>"Location",
     "office"=>"Office",
@@ -157,7 +156,7 @@ return [
     "tags"=>"Tags",
     "watch_video"=>"Watch Video",
     "related_doctors"=>"Related Doctors",
-    "skills"=>"Skill & Achievments",
+    "skills"=>"Skills & Achievments",
     "training"=>"Academic Training",
     "degree"=>"Degree",
     "department"=>"Head of Department",
