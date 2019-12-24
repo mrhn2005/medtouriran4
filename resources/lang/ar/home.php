@@ -10,7 +10,7 @@ return [
     "about_us"=> "من نحن",
     "medtouriran"=>"مدتور ايران",
     "medtouriran_info"=>"موفر السياحة الطبية المهنية في إيران",
-    "slider_search_text"=>"عن ماذا تبحث ؟",
+    "slider_search_text"=>"أخبرنا ما نوع العلاج وما المدينة التي تبحث عنها؟",
     "search"=>"بحث",
     "subscribe"=>"الاشتراك",
     "your_email"=>"ايميلك",
