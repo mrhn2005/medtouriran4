@@ -123,17 +123,16 @@ button{
     margin: 45px 0 30px !important;
 }
 #template-content h3{
-    text-transform: capitalize;
-    margin: 50px 10px 0px!important;
-    font-size: 24px !important;
+    text-transform: unset;
+    margin: 35px 10px 0px!important;
+    font-size: 22px !important;
 }
 #template-content .template-p,#template-content p{
-    margin: 19px 10px !important;
+    margin: 15px 10px !important;
     line-height: 1.6;
     /*text-align: justify;*/
     font-size: 16px;
     color: #525252;
-    /*word-spacing: 3px;*/
 }
 #template-content .template-ul,#template-content ul{
     /*text-transform: capitalize;*/

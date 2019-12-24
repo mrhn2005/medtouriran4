@@ -177,7 +177,7 @@ return [
     "need_help"=>"Need Help?",
     "chat_with"=>"Chat with us",
     "conversation"=>"Conversation With <b>MedTourIran</b>",
-    "choose_language"=>"Hi! Choose your language ",
+    "choose_language"=>"Hi! Choose your language",
     "team_replies"=>"The operator typically replies in a few minutes.",
 
 
