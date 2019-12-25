@@ -1,3 +1,16 @@
 p, h1,h2, h3, h3, h4, h5, h6, input, form, button, li, .paragraph-medium{
     font-family: 'Tajawal', sans-serif !important;
 }
+.wa__btn_popup .wa__btn_popup_txt {
+
+    font-family: 'Tajawal', sans-serif !important;
+}
+.sub-ttl {
+    font-family: 'Tajawal', sans-serif !important;
+}
+.menu > li > a {
+    font-family: 'Tajawal', sans-serif !important;
+}
+.menu li li a {
+    font-family: 'Tajawal', sans-serif !important;
+}

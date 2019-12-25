@@ -17,10 +17,10 @@
                     <!-- Start Menu Section -->
                     <ul class="menu p-0">
                         <li>
-                            <a href="{{route('package.index')}}" class="mdl-button mdl-js-button mdl-js-ripple-effect">@lang('home.packages') </a>
+                            <a href="{{route('package.index')}}" class="mdl-button">@lang('home.packages') </a>
                         </li>
                         <li class="menu-megamenu-li">
-                            <a href="{{route('procedure.index')}}" class="mdl-button mdl-js-button mdl-js-ripple-effect">@lang("home.procedures") <i class="fa fa-chevron-down"></i></a>
+                            <a href="{{route('procedure.index')}}" class="mdl-button">@lang("home.procedures") <i class="fa fa-chevron-down"></i></a>
                             <ul class="menu-megamenu pb-2">
                                 <li class="row">
                                     @foreach($categories as $category)
@@ -38,7 +38,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">@lang('home.services') <i class="fa fa-chevron-down"></i></a>
+                            <a href="#" class="mdl-button">@lang('home.services') <i class="fa fa-chevron-down"></i></a>
                             <ul class="menu-dropdown">
                                 <li>
                                     <a href="{{route('service.hotel.index','medical-centers')}}">@lang('home.our_medical_centers')</a>
@@ -64,14 +64,14 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="{{route('patientReview')}}" id="menu-review" class="mdl-button mdl-js-button mdl-js-ripple-effect">@lang('home.patients_review')</a>
+                            <a href="{{route('patientReview')}}" id="menu-review" class="mdl-button">@lang('home.patients_review')</a>
                         </li>
                         <li>
-                            <a href="{{route('blog.index')}}" id="menu-blog" class="mdl-button mdl-js-button mdl-js-ripple-effect">@lang('home.blog')</a>
+                            <a href="{{route('blog.index')}}" id="menu-blog" class="mdl-button">@lang('home.blog')</a>
                         </li>
 
                         <li>
-                            <a href="{{route('single-page',['about-us'])}}" class="mdl-button mdl-js-button mdl-js-ripple-effect">@lang('home.about_us') <i class="fa fa-chevron-down"></i></a>
+                            <a href="{{route('single-page',['about-us'])}}" class="mdl-button">@lang('home.about_us') <i class="fa fa-chevron-down"></i></a>
                             <ul class="menu-dropdown">
                                 <!--<li><a href="#">Our Team</a></li>-->
 {{--                                <li><a href="{{route('single-page',['contact-us'])}}">@lang('home.contact')</a></li>--}}
@@ -83,7 +83,7 @@
                         </li>
                         @if(!empty(App::getLocale()))
                             <li id="menu-lang">
-                                <a class="mdl-button mdl-js-button mdl-js-ripple-effect"> {{config('app.locales')[App::getLocale()]}}  <i class="fa fa-chevron-down"></i></a>
+                                <a class="mdl-button"> {{config('app.locales')[App::getLocale()]}}  <i class="fa fa-chevron-down"></i></a>
                                 <ul class="menu-dropdown menu-lang--ul">
                                     @foreach (config('app.locales') as $localeKey => $locale)
                                         @if ($localeKey != app()->getLocale())
@@ -153,7 +153,7 @@
 
                     @foreach (config('app.locales') as $localeKey => $locale)
                         @if ($localeKey != app()->getLocale())
-                            <a href="{{ route('locale.switch', $localeKey) }}" style="font-weight: 600;color: #fff !important;" class="mdl-button mdl-js-button">{{ $locale }}</a>
+                            <a href="{{ route('locale.switch', $localeKey) }}" style="font-weight: 600;color: #fff !important;" class="mdl-button">{{ $locale }}</a>
                         @endif
                     @endforeach
 
