@@ -27,3 +27,12 @@ p, h1,h2, h3, h3, h4, h5, h6, input, form, button, li, .paragraph-medium{
 .menu li li a {
     font-family: 'rudaw', sans-serif !important;
 }
+@media screen and (max-width: 690px) {
+    #hm-slider .slider-info p {
+        font-size: 14px !important;
+    }
+    #hm-slider .slider-info {
+        position: absolute;
+        top: 21%;
+    }
+}
