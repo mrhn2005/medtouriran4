@@ -137,9 +137,9 @@ class HomeController extends Controller
         $doctor->load('categories');
         $categoryIds = $doctor->categories->pluck('id')->toArray();
 
-        $related_doctors = Doctor::whereHas('categories', function($q) use($categoryIds) {
+        $related_doctors = Doctor::whereHas('categories', function ($q) use ($categoryIds) {
             $q->whereIn('category_id', $categoryIds);
-        })->where('id','!=' ,$doctor->id)
+        })->where('id', '!=', $doctor->id)
         ->inRandomOrder()->limit($this->doctor_per_doctor)->get();
 
         return view('front.pages.services.doctors.doctor', compact('doctor', 'related_doctors'));
@@ -148,12 +148,18 @@ class HomeController extends Controller
 
     public function blogs()
     {
+        if (in_array(App::getLocale(), array_keys(config('lang.except_blog_lang')))) {
+            return redirect(route('locale.switch', 'en'), 301);
+        }
         $posts=Post::withTranslations(App::getLocale())->with('authorId')->orderBy('created_at', 'desc')->paginate($this->post_per_blog);
         return view('front.pages.blog.posts', compact('posts'));
     }
     
     public function blog(Post $single_post, $slug="")
     {
+        if (in_array(App::getLocale(), array_keys(config('lang.except_blog_lang')))) {
+            return redirect(route('locale.switch', 'en'), 301);
+        }
         $single_post->load('tags.translations');
         return view('front.pages.blog.post', compact('single_post'));
     }

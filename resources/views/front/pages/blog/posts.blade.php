@@ -4,9 +4,7 @@
 {{setting(App::getLocale().'.title')}}
 @endsection
 
-@section('style')
-
-@endsection
+@include('front.pages.blog.includes.hreflang')
 
 @section('content')	
 <!-- Start Page Title Section -->

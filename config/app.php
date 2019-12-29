@@ -86,6 +86,7 @@ return [
         'en' => 'English',
         'ar' => 'العربیة',
         'ku' => 'کوردی',
+        'ru' => 'Russian'
         // Add as many languages you want
     ],
     

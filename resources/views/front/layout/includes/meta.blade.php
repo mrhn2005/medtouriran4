@@ -11,8 +11,13 @@
 ">
 
 <!-- HrefLang -->
-@foreach (config('app.locales') as $localeKey => $locale)
-    <link rel="alternate" hreflang="{{$localeKey}}"
-    href="{{Helper::get_locale_url($localeKey,url()->current())}}" />
-@endforeach
+@hasSection('hreflang')
+    @yield('hreflang')
+@else
+    @foreach (config('app.locales') as $localeKey => $locale)
+        <link rel="alternate" hreflang="{{$localeKey}}"
+        href="{{Helper::get_locale_url($localeKey,url()->current())}}" />
+    @endforeach
+@endif
+
 <!--End HrefLang -->

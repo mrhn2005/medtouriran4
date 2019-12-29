@@ -8,6 +8,8 @@
  {{$single_post->getTranslatedAttribute('meta_description')}}
 @endsection
 
+@include('front.pages.blog.includes.hreflang')
+
 @section('content')	
 <!-- Start Page Title Section -->
 <div class="page-ttl" style="background: url('{{Voyager::image($single_post->grand_background)}}')">
