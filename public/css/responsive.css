@@ -194,8 +194,15 @@
 
 
 @media screen and (max-width : 690px){
-    #hm-slider .slider-search{
-        top: 37.5% !important;
+    #hm-slider .slider-search {
+        top: 41.5%!important;
+    }
+    #hm-slider .slider-info {
+        position: absolute;
+        top: 24%;
+    }
+    #hm-slider .slider-info p {
+        font-size: 16px !important;
     }
     .flex-direction-nav a:before {
         font-size: 30px !important;
@@ -516,9 +523,6 @@
     }
     #hm-service .feature-block {
         width: 50% !important;
-    }
-    .slider-info p {
-        display: none;
     }
 }@media only screen and (min-width: 427px) {
     .hidden-mdd{

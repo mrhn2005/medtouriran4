@@ -85,7 +85,7 @@ button{
 /*}*/
 /******** template settings********* */
 #template-content{
-    font-family: Nunito,sans-serif !important;
+    /*font-family: Nunito,sans-serif !important;*/
     word-spacing: 2.5px;
 }
 .template-title , #template-content h3{
@@ -123,17 +123,16 @@ button{
     margin: 45px 0 30px !important;
 }
 #template-content h3{
-    text-transform: capitalize;
-    margin: 50px 10px 0px!important;
-    font-size: 24px !important;
+    text-transform: unset;
+    margin: 35px 10px 0px!important;
+    font-size: 22px !important;
 }
 #template-content .template-p,#template-content p{
-    margin: 19px 10px !important;
+    margin: 15px 10px !important;
     line-height: 1.6;
     /*text-align: justify;*/
     font-size: 16px;
     color: #525252;
-    /*word-spacing: 3px;*/
 }
 #template-content .template-ul,#template-content ul{
     /*text-transform: capitalize;*/
@@ -923,17 +922,17 @@ span.a2a_svg.a2a_s__default.a2a_s_youtube {
 }
 #hm-slider h1 {
     color: white !important;
-    font-family: 'Comfortaa', cursive;
+    /*font-family: 'Comfortaa', cursive;*/
     letter-spacing: 1px;
     margin-bottom: 7px;
     font-weight : 500;
 }
 
 #hm-slider .slider-info p {
-    font-size: 16px;
+    font-size: 20px;
     color: rgba(255, 255, 255, 0.75);
     animation-delay: .6s;
-    font-family: 'Comfortaa', cursive;
+    /*font-family: 'Comfortaa', cursive;*/
 }
 #hm-slider .slider-info {
     position: absolute;
@@ -945,14 +944,14 @@ span.a2a_svg.a2a_s__default.a2a_s_youtube {
     width: 100%;
     /* margin: 13% auto; */
     /* background-color: red; */
-    top: 48%;
+    top: 50%;
     left: 50%;
     z-index: 20;
     transform: translate(-50%,0%);
 }
 
 #hm-slider .hm-slider-searchtext{
-    font-size: 2.1rem;
+    font-size: 1.8rem;
     color: white;
 }
 
@@ -2817,7 +2816,7 @@ button:focus {
 #footer .paragraph-medium {
     font-size: 13px;
     line-height: 21px;
-    font-family: "Montserrat", sans-serif;
+    /*font-family: "Montserrat", sans-serif;*/
     margin: 0 0 10px 0;
     letter-spacing: 1px;
 }
@@ -3457,7 +3456,7 @@ button:focus {
 .wa__btn_popup .wa__btn_popup_txt {
     min-width: 170px !important;
     font-size: 13px !important;
-    font-family: 'Tajawal', sans-serif !important;
+    /*font-family: 'Tajawal', sans-serif !important;*/
 }
 .contact-info-inner {
     min-height: 260px;
@@ -3493,7 +3492,7 @@ button:focus {
 
 .sub-ttl {
     color: var(--bold-text);
-    font-family: 'Tajawal', sans-serif !important;
+    /*font-family: 'Tajawal', sans-serif !important;*/
 }
 
 .service-post p ,.service-post p span{
