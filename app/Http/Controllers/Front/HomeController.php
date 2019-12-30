@@ -83,6 +83,9 @@ class HomeController extends Controller
 
     public function package(Package $package, $slug="")
     {
+        if ($package->slug != $slug) {
+            return redirect(route('package.show',[$package,$package->slug]), 301);
+        }
         $package->load(['items.translations','prices.translations','children.items.translations','timelines.translations']);
         return view('front.pages.packages.package', compact('package'));
     }
@@ -116,6 +119,9 @@ class HomeController extends Controller
     
     public function procedure(Category $category, $slug="")
     {
+        if ($category->slug != $slug) {
+            return redirect(route('procedure.show',[$category,$category->slug]), 301);
+        }
         $category->load(['packages.children.items.translations','packages.children.cities.translations']);
         $categories=Category::where('parent_id', null)->withTranslations(App::getLocale())->get();
         return view('front.pages.procedures.procedure', compact('category', 'categories'));
@@ -134,6 +140,9 @@ class HomeController extends Controller
     
     public function doctor(Doctor $doctor, $slug="")
     {
+        if ($doctor->slug != $slug) {
+            return redirect(route('service.doctor.show',[$doctor,$doctor->slug]), 301);
+        }
         $doctor->load('categories');
         $categoryIds = $doctor->categories->pluck('id')->toArray();
 
@@ -160,12 +169,18 @@ class HomeController extends Controller
         if (in_array(App::getLocale(), array_keys(config('lang.except_blog_lang')))) {
             return redirect(route('locale.switch', 'en'), 301);
         }
+        if ($single_post->slug != $slug) {
+            return redirect(route('blog.show',[$single_post,$single_post->slug]), 301);
+        }
         $single_post->load('tags.translations');
         return view('front.pages.blog.post', compact('single_post'));
     }
 
     public function tag_show(Tag $tag, $slug="")
     {
+        if ($tag->slug != $slug) {
+            return redirect(route('tag.show',[$tag, $tag->slug]), 301);
+        }
         $tag_title=$tag->title;
         // return $tag_id;
         $posts=Post::withTranslations(App::getLocale())->whereHas('tags', function ($q) use ($tag_title) {
