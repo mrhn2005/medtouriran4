@@ -41,8 +41,7 @@ class Helper
                 return $image;
             }
         }
-        return $image;
-        return '/uploads/service-1.jpg';
+        return 'https://via.placeholder.com/300x300.png?text=MedTourIran';
     }
 
 
