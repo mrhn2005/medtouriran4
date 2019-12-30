@@ -207,6 +207,9 @@ class HomeController extends Controller
     
     public function destination(City $city, $slug="")
     {
+        if ($city->slug != $slug) {
+            return redirect(route('aboutMedical.destination.show',[$city,$city->slug]), 301);
+        }
         return view('front.pages.medicalTourism.destinations.destination', compact('city'));
     }
 
