@@ -10,7 +10,7 @@ class Category extends Cat
 {
     use Resizable;
 
-    protected $translatable = ['slug', 'title', 'excerpt', 'body'];
+    protected $translatable = ['title', 'excerpt', 'body'];
 
     protected $fillable = ['slug', 'title' , 'excerpt', 'body'];
 
