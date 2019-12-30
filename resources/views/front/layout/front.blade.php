@@ -2,6 +2,8 @@
 <html dir="{{$is_rtl?'rtl':'ltr'}}" lang="{{App::getLocale()}}">
 <head>
     @include('front.layout.includes.meta')
+
+    @yield('meta')
     <!-- Site Title -->
     <title>
 	@hasSection('title')

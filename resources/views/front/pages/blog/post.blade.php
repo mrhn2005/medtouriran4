@@ -4,6 +4,10 @@
 {{$single_post->getTranslatedAttribute('title')}} - {{setting(App::getLocale().'.title')}}
 @endsection
 
+@section('meta')
+    <link rel="canonical" href="{{route('blog.show',[$single_post,$single_post->slug])}}" />
+@endsection
+
 @section('meta_desc')
  {{$single_post->getTranslatedAttribute('meta_description')}}
 @endsection
