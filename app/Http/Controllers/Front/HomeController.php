@@ -158,7 +158,7 @@ class HomeController extends Controller
     public function blogs()
     {
         if (in_array(App::getLocale(), array_keys(config('lang.except_blog_lang')))) {
-            return redirect(route('locale.switch', 'en'), 301);
+            return redirect(Helper::get_locale_url('en', url()->current()), 301);
         }
         $posts=Post::withTranslations(App::getLocale())->with('authorId')->orderBy('created_at', 'desc')->paginate($this->post_per_blog);
         return view('front.pages.blog.posts', compact('posts'));
@@ -167,7 +167,7 @@ class HomeController extends Controller
     public function blog(Post $single_post, $slug="")
     {
         if (in_array(App::getLocale(), array_keys(config('lang.except_blog_lang')))) {
-            return redirect(route('locale.switch', 'en'), 301);
+            return redirect(Helper::get_locale_url('en', url()->current()), 301);
         }
         if ($single_post->slug != $slug) {
             return redirect(route('blog.show',[$single_post,$single_post->slug]), 301);
