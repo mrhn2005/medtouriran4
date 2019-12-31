@@ -200,9 +200,3 @@
         @include('front.common.form')
 </form>
 @endsection
-@section('js')
-
-<script type="text/javascript">
-
-</script>
-@endsection

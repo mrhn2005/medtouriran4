@@ -171,6 +171,13 @@
 
 @if(count($package->children)>2)
     @section('js')
+        <script>
+            is_rtl = false;
+            @if($is_rtl)
+                is_rtl = true;
+            @endif
+                
+        </script>
         <script src="{{asset('js/pages/package.js')}}" defer></script>                          
     @endsection
 @endif

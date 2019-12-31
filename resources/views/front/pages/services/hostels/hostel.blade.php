@@ -434,22 +434,5 @@
    
    
 @section('js')
-
-<script type="text/javascript">
-    $('#hostel-page--gallery-owl-carousel').owlCarousel({
-        loop:true,
-        margin:5,
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:2
-            },
-            1000:{
-                items:3
-            }
-        }
-    })
-</script>
+    <script src="{{asset('js/pages/hotel.js')}}" defer></script>
 @endsection

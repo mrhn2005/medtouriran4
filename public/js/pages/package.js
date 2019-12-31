@@ -2,9 +2,7 @@ $("#package-page--packages-slider").owlCarousel({
     center: true,
     autoplay: true,
     items: 1,
-    @if($is_rtl)
-        rtl:true,
-    @endif
+    rtl: is_rtl,
     // margin: 10,
     loop: true,
     smartSpeed: 1000,
@@ -39,4 +37,3 @@ $('#package-page--packages-slider .owl-prev').dblclick( () => {
 $('#package-page--packages-slider .owl-next').dblclick( () => {
     $('.owl-carousel').trigger('next.owl.carousel');
 });
-@endif

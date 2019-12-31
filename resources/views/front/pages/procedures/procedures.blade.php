@@ -44,5 +44,5 @@
 @endsection
 
 @section('js')
-    <script src="{{asset('js/pages/package.js')}}" defer></script> 
+    <script src="{{asset('js/pages/procedures.js')}}" defer></script> 
 @endsection
