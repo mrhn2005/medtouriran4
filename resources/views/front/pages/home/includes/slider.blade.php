@@ -1,5 +1,5 @@
 <div id="hm-slider" class="slider-1">
-    <div class="flexslider slider-wrapper">
+    <div class="slider-wrapper">
         <form action="{{route('homesearch')}}" class="form-horizontal cform-2" method="get">
 
             <div class="slider-search">
@@ -41,10 +41,6 @@
                     <p class="animated fadeInDown">@lang("home.medtouriran_info")</p>
                 </div>
                 <div class="slider-background-image" style="background-image: url('/images/background/bg1.jpg');"></div>
-                <!--Make an Appointment  Button -->
-                <!--<div class="slider-button slider-appointment">-->
-                <!--    <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect  animated fadeInUp">Make An Appointment<i class="fa fa-check"></i></a>-->
-                <!--</div>-->
             </li>
         </ul>
     </div>

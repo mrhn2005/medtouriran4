@@ -44,9 +44,5 @@
 @endsection
 
 @section('js')
-    <script>
-    jQuery(function(){
-       jQuery('.active').click();
-    });
-    </script>
+    <script src="{{asset('js/pages/package.js')}}" defer></script> 
 @endsection

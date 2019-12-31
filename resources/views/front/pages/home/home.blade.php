@@ -6,7 +6,7 @@
 @endsection
 
 @section('style')
-
+    <link rel="preload" href="{{asset('images/background/bg1.jpg')}}" as="image">
 @endsection
 
 @section('content')	
@@ -60,25 +60,6 @@
 
 
 @section('js')
-    <script>
-        $('#video-sample-frame--player').click(function(){
-            // alert('clicked');
-            $(".video-sample-frame-player").show(500);
-        });
-        $('#video-sample-frame--player-close').click(function() {
-            $(".video-sample-frame-player").hide(500);
-        });
-        $(window).resize(function () {
-            // var frameImage = $('img.video-sample-frame--img');
-            if ($(window).width() > 992) {
-                $('img.video-sample-frame--img').attr("src","/images/video_review/medtour.png");
-            } else {
-                $('img.video-sample-frame--img').attr("src","/images/video_review/medtour-xs.png");
-            }
-        });
-
-    </script>
-
-
+    <script src="{{asset('js/pages/home.js')}}" defer></script>
 @endsection
 

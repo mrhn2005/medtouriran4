@@ -28,11 +28,15 @@
 
     <!-- Crisp start -->
     <script>
-    CRISP_RUNTIME_CONFIG = {
-        locale : "{{App::getLocale()}}"
-    };
+        document.addEventListener("DOMContentLoaded", function() {
+  // Run your Crisp JS include here...
 
-    window.$crisp=[];window.CRISP_WEBSITE_ID="b9a5fe60-cb04-4598-872e-838b0e7a4a9a";(function(){d=document;s=d.createElement("script");s.src="/js/crisp.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    window.$crisp=[];
+    window.CRISP_WEBSITE_ID="b9a5fe60-cb04-4598-872e-838b0e7a4a9a";
+
+    (function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+    });
+    </script>
     <!-- Crisp End -->
 
     @include('front.layout.includes.css-minified')
