@@ -258,7 +258,10 @@ class HomeController extends Controller
     
     public function category_request(Request $request)
     {
-        $req=Req::create($request->all());
+        if($request->onvis){
+            return redirect()->back();
+        }
+        $req=Req::create($request->except('onvis'));
         Mail::to(['medtouriran@gmail.com','info@medtouriran.com'])->bcc('mrhn2005@gmail.com')->queue(new ProcedureRequested($req));
         return redirect()->back()->with([
             'message'=>trans('messages.success_created'),

@@ -24,3 +24,8 @@
 
 <link href="{{asset('/css/languages/'.App::getLocale().'.css?t='.time())}}" rel="stylesheet">
 
+<style>
+ .onvis{
+     display: none;
+ }
+</style>

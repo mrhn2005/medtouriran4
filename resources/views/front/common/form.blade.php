@@ -35,6 +35,7 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input">
+                                <input name="onvis" class="onvis" value="">
                                 <input class="mdl-textfield__input" type="text" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="hm-booking-form--email">
                                 <label class="mdl-textfield__label" for="comment-email">@lang('home.email')
                                     <span class="mdl-textfield__error">@lang('home.email_field')</span>
