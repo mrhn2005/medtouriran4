@@ -14,8 +14,7 @@
 <link rel="preload" href="/fonts/flat-icon/flaticon.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="/fonts/flat-icon/flaticon.css"></noscript>
 
-<link rel="preload" href="/dist/minified.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="/dist/minified.css"></noscript>
+<link rel="stylesheet" href="/dist/minified.css">
 @if(!$is_rtl)
     <link rel="preload" href="/fonts/nunito/nunito.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/fonts/nunito/nunito.css"></noscript>

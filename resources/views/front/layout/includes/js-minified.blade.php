@@ -1,22 +1,10 @@
-
+<script src="/js/jquery-2.1.4.min.js"></script>
 <script  src="/dist/minified.js" defer></script>
 <!-- <script  src="/js/smoothscroll.min.js"></script> -->
 <script>
-var callback = function(){
-    var s = document.getElementById("preloader").style;
-
-    s.opacity = 1;
-    (function fade(){(s.opacity-=.06)<0?s.display="none":setTimeout(fade,30)})();
-};
-
-if (
-    document.readyState === "complete" ||
-    (document.readyState !== "loading" && !document.documentElement.doScroll)
-) {
-  callback();
-} else {
-  document.addEventListener("DOMContentLoaded", callback);
-}
+$(window).load(function() {
+        $('.preloader').fadeOut('slow');
+    });
 
 </script>
 <!--Custom JavaScript for Klinik Template-->
