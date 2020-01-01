@@ -271,7 +271,10 @@ class HomeController extends Controller
     
     public function comment_store(Request $request)
     {
-        Review::create($request->all());
+        if($request->onvis){
+            return redirect()->back();
+        }
+        Review::create($request->except('onvis'));
         return redirect()->back()->with([
             'message'=>trans('messages.success_created'),
             'alert-type'=>'success'
@@ -286,7 +289,10 @@ class HomeController extends Controller
     
     public function subscriber_store(Request $request)
     {
-        Subscriber::create($request->all());
+        if($request->onvis){
+            return redirect()->back();
+        }
+        Subscriber::create($request->except('onvis'));
         return redirect()->back()->with([
             'message'=>trans('messages.success_created'),
             'alert-type'=>'success'

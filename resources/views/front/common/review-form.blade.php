@@ -18,6 +18,7 @@
         </div>
         <div class="col-sm-12">
             <div class="mdl-textfield mdl-js-textfield form-input">
+                <input name="onvis" class="onvis" value="">
                 <textarea class="mdl-textfield__input" name="comment" rows="4" id="package-page--comment-message" ></textarea>
                 <label class="mdl-textfield__label" for="comment-message">@lang('home.your_comment')</label>
             </div>

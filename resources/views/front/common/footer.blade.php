@@ -58,6 +58,7 @@
                             <form method="post" action="{{route('subscriber.store')}}">
                             @csrf
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input">
+                                <input name="onvis" class="onvis" value="">
                                 <input class="mdl-textfield__input" name="email" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="subscribe-email" required>
                                 <label class="mdl-textfield__label" for="subscribe-email">@lang('home.your_email')</label>
                                 <span class="mdl-textfield__error">Please Enter Valid Email!</span>

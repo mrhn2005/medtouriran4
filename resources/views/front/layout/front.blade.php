@@ -15,7 +15,36 @@
     
     <!-- Favicon Icon -->
     <link rel="icon" type="image/png" href="/images/logo-color.png" />
+    <style>
+    #preloader{
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+}
 
+.preloader-container{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.preloader-container img{
+    width: 11rem;
+    animation-name: heartbeat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+.wa__popup_chat_box{
+    opacity: 0;
+}
+    </style>
+    
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111472260-4"></script>
     <script>
