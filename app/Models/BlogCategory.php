@@ -2,12 +2,14 @@
 
 namespace App\Models;
 
+use App\Traits\CanNotParentItself;
 use Illuminate\Database\Eloquent\Model;
 use TCG\Voyager\Traits\Translatable;
 
 class BlogCategory extends Model
 {
-    use Translatable;
+    use Translatable,
+        CanNotParentItself;
     
     protected $translatable = ['title'];
 

@@ -2,13 +2,15 @@
 
 namespace App\Models;
 
+use App\Traits\CanNotParentItself;
 use TCG\Voyager\Traits\Resizable;
 use TCG\Voyager\Facades\Voyager;
 use TCG\Voyager\Models\Category as Cat;
 
 class Category extends Cat
 {
-    use Resizable;
+    use Resizable,
+        CanNotParentItself;
 
     protected $translatable = ['title', 'excerpt', 'body'];
 
