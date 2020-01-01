@@ -11,12 +11,9 @@
 @section('content')	
     <!-- Start Page Title Section -->
     <div class="page-ttl" style="background: url({{Helper::placeholder(Voyager::image($category->main_image))}})">
-{{--        <div class="layer-stretch">--}}
             <div class="page-ttl-container">
                 <h1>{{$category->getTranslatedAttribute('title')}}</h1>
-{{--                <p><a href="{{route('home')}}">Home</a> &#8594; <a href="{{route('procedure.index')}}">Procedures</a> &#8594; <span>{{$category->getTranslatedAttribute('title')}}</span></p>--}}
             </div>
-{{--        </div>--}}
     </div><!-- End Page Title Section -->
     <!-- Start Blog Section -->
     <div class="layer-stretch" id="procedure-page">
@@ -24,13 +21,8 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="theme-material-card">
-{{--                        <div class="theme-img blog-picture" id="procedure-page--main-image">--}}
-{{--                            <img class="" src="{{Helper::placeholder(Voyager::image($category->main_image))}}" alt="{{$category->getTranslatedAttribute('title')}}">--}}
-{{--                        </div>--}}
-{{--                        <h2 class="blog-ttl">{{$category->getTranslatedAttribute('title')}}</h2>--}}
                         <div class="blog-post" id="procedure-page--post">
                             <h3 class="font-weight-700 template-title">@lang('home.template_list')</h3>
-{{--                            <p>@lang('home.template_list')</p>--}}
                             {!! $category->getTranslatedAttribute('body') !!}
                         </div>
                         
@@ -116,7 +108,7 @@
 
 
 
-@if(count($package->children)>2)
+@if($count_packages>2)
     @section('js')
         <script>
             is_rtl = false;

@@ -3,7 +3,7 @@
 {{-- <link rel="preload" href="{{asset('fonts/comfortaa/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4WjMDrMfIA.woff2')}}" as="font"> --}}
 {{-- <link rel="preload" href="{{asset('dist/fonts/flexslider-icon.woff')}}" as="font"> --}}
 <link href="/fonts/comfortaa/comfortaa.css" rel="stylesheet" async>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 <link rel="preload" href="/fonts/font-awesome/css/v4-shims.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="/fonts/font-awesome/css/v4-shims.css"></noscript>
 

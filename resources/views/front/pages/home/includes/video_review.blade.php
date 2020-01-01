@@ -8,9 +8,9 @@
                 <div class="col-md-6 col-sm-12">
                     <div class="video-sample-frame">
                         <img class="video-sample-frame--img lazy" data-src="/images/video_review/medtour.png" alt="tehran">
-                        <div class="video-sample-frame-player">
+                        <div id="introduction-video" class="video-sample-frame-player">
                             <i id="video-sample-frame--player-close" class="fa fa-close"></i>
-                            <iframe id="introduction-video" class="video-sample-frame--video" data-loader="youtube" data-src="{{setting('site.site_video')}}" allow="accelerometer; autoplay; encrypted-media;" allowfullscreen></iframe>
+                            
                         </div>
 
                     </div>
