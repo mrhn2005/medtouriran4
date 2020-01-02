@@ -21,5 +21,5 @@ $(window).load(function() {
     var alertType = {!! json_encode(Session::get('alert-type', 'info')) !!};
     var alertMessage = {!! json_encode(Session::get('message')) !!};
 </script>
-<script src="{{asset('/js/front-blade.js')}}" defer></script>
+<script src="{{asset('/js/front-blade.js?v='.time())}}" defer></script>
 @yield('js')
