@@ -258,7 +258,7 @@ class HomeController extends Controller
     
     public function category_request(Request $request)
     {
-        if($request->onvis){
+        if($request->onvis or $request->submit){
             return redirect()->back();
         }
         $req=Req::create($request->except('onvis'));
@@ -271,7 +271,7 @@ class HomeController extends Controller
     
     public function comment_store(Request $request)
     {
-        if($request->onvis){
+        if($request->onvis or $request->submit){
             return redirect()->back();
         }
         Review::create($request->except('onvis'));
@@ -289,7 +289,7 @@ class HomeController extends Controller
     
     public function subscriber_store(Request $request)
     {
-        if($request->onvis){
+        if($request->onvis or $request->submit){
             return redirect()->back();
         }
         Subscriber::create($request->except('onvis'));

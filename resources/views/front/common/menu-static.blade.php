@@ -73,8 +73,6 @@
                 <!--<li><a href="#">Our Team</a></li>-->
                 <li><a href="{{route('single-page',['contact-us'])}}">@lang('home.contact')</a></li>
                 <li><a href="{{route('single-page',['faq'])}}">@lang('home.faq')</a></li>
-                <!--&lt;!&ndash;<li><a href="#">Terms &#38; Conditions</a></li>&ndash;&gt;-->
-                <!--&lt;!&ndash;<li><a href="#">Privacy Policy</a></li>&ndash;&gt;-->
             </ul>
 
         </li>
@@ -87,9 +85,7 @@
                         <li><a href="{{ route('locale.switch', $localeKey) }}">{{ $locale }}</a></li>
                     @endif
                 @endforeach
-
             </ul>
-
         </li>
         @endif
     </ul><!-- End Menu Section -->

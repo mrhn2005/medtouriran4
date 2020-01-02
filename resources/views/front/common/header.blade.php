@@ -149,16 +149,16 @@
         <div id="mobile-menu--overlay"></div>
         <div id="mobile-menu--bar"><a><i class="fa fa-bars"></i></a></div>
         <div id="mobile-menu--lang">
-           <a id="mobile-menu--lang-switch" class="mdl-button">En<i class="fa fa-chevron-down" style="padding: 0 6px;"></i></a>
-            @if(!empty(App::getLocale()))
-                <ul class="mobile-menu--lang-list closee">
-                @foreach (config('app.locales') as $localeKey => $locale)
-                    @if ($localeKey != app()->getLocale())
-                    <li><a href="{{ route('locale.switch', $localeKey) }}" class="mdl-button">Ar</a></li>
-                    @endif
-                @endforeach
-                </ul>
-            @endif
+           <a id="mobile-menu--lang-switch" class="mdl-button">{{App::getLocale()}}<i class="fa fa-chevron-down" style="padding: 0 6px;"></i></a>
+            
+            <ul class="mobile-menu--lang-list closee">
+            @foreach (config('app.locales') as $localeKey => $locale)
+                @if ($localeKey != app()->getLocale())
+                <li><a href="{{ route('locale.switch', $localeKey) }}" class="mdl-button">{{$localeKey}}</a></li>
+                @endif
+            @endforeach
+            </ul>
+            
         </div>
         <div id="mobile-menu--logo">
             @if($is_rtl)
