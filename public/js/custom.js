@@ -306,3 +306,4 @@
     $('.gallery-owl-carousel .owl-next').dblclick( () => {
         $('.owl-carousel').trigger('next.owl.carousel');
     });
+
