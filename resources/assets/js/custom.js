@@ -38,7 +38,7 @@
     //OnDOMLoad  **************************************
     //*************************************************
     $(window).on('load', function () {
-        $('.slider-wrapper').flexslider({
+        $('.flexsider').flexslider({
             animation: "fade",
             animationLoop: true,
             pauseOnHover: true,

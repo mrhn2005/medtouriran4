@@ -44,18 +44,18 @@ mix
     //     'public/css/whatsapp.css',
     // ], 'public/dist/vendor.css')
     .styles([
-        'public/css/variable.css',
-        // 'public/css/fixed-social-bar.css',
-        'public/css/rtl.css',
-        'public/css/custom.css',
-        'public/css/responsive.css',
+        'resources/assets/css/variable.css',
+        // 'resources/assets/css/fixed-social-bar.css',
+        'resources/assets/css/rtl.css',
+        'resources/assets/css/custom.css',
+        'resources/assets/css/responsive.css',
     ], 'public/dist/rtl-all.css')
     .styles([
-        'public/css/variable.css',
-        // 'public/css/fixed-social-bar.css',
-        'public/css/ltr.css',
-        'public/css/custom.css',
-        'public/css/responsive.css',
+        'resources/assets/css/variable.css',
+        // 'resources/assets/css/fixed-social-bar.css',
+        'resources/assets/css/ltr.css',
+        'resources/assets/css/custom.css',
+        'resources/assets/css/responsive.css',
     ], 'public/dist/ltr-all.css');
     // .options({
     //     processCssUrls: true
@@ -82,12 +82,12 @@ mix
     //     'public/js/whatsapp.js',
     // ],'public/dist/vendor.js')
     .scripts([
-        'public/js/rtl.js',
-        'public/js/custom.js',
+        'resources/assets/js/rtl.js',
+        'resources/assets/js/custom.js',
     ],'public/dist/rtl-all.js')
     .scripts([
-        'public/js/ltr.js',
-        'public/js/custom.js',
+        'resources/assets/js/ltr.js',
+        'resources/assets/js/custom.js',
     ],'public/dist/ltr-all.js')
     // .options({
     //     uglify: true

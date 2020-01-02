@@ -32,8 +32,8 @@
     <link rel="preload" href="/fonts/rudaw/rudaw.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/fonts/rudaw/rudaw.css"></noscript>
 
-    <link rel="preload" href="/dist/rtl-all.css?t={{time()}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/dist/rtl-all.css?t={{time()}}"></noscript>
+    <link rel="preload" href="{{mix('dist/rtl-all.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{mix('dist/rtl-all.css')}}"></noscript>
 
 @endif
 
