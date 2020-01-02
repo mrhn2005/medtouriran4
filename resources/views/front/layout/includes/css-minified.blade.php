@@ -19,8 +19,8 @@
     <link rel="preload" href="/fonts/nunito/nunito.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/fonts/nunito/nunito.css"></noscript>
 
-    <link rel="preload" href="/dist/ltr-all.css?t={{time()}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/dist/ltr-all.css?t={{time()}}"></noscript>
+    <link rel="preload" href="{{mix('dist/ltr-all.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{mix('dist/ltr-all.css')}}"></noscript>
 
 @else
     <link rel="preload" href="/css/bootstrap4rtl.css" as="style" onload="this.onload=null;this.rel='stylesheet'">

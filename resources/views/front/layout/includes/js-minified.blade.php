@@ -9,10 +9,10 @@ $(window).load(function() {
 </script>
 <!--Custom JavaScript for Klinik Template-->
 @if(!$is_rtl)
-    <script src="/dist/ltr-all.js?t={{time()}}" defer></script>
+    <script src="{{mix('dist/ltr-all.js')}}" defer></script>
 @else
     <script src="/js/bootstrap4rtl.min.js" defer></script>
-    <script  src="/dist/rtl-all.js?t={{time()}}" defer></script>
+    <script  src="{{mix('dist/rtl-all.js')}}" defer></script>
 @endif
 <script src="{{asset('/js/languages/'.App::getLocale().'.js?t='.time())}}" defer></script>
 <script>
