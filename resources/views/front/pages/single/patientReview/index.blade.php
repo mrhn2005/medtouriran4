@@ -29,7 +29,7 @@
                         <div class="patients-review-page--media">
                             <div class="patients-review-page--theme-block">
                                 <div class="gallery-block theme-block-picture package-picture-2">
-                                    <iframe width="100%" height data-loader="youtube" data-src="{{$video->video}}"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe class="lazy" width="100%" height data-loader="youtube" data-src="https://www.youtube.com/embed/{{$video->video}}"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
                             </div>
                         </div>

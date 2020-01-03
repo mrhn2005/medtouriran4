@@ -109,7 +109,7 @@
                 @foreach(explode(";",$doctor->testimonal) as $video)
                 <div class="col-sm-12 col-md-6">
                     <div class="theme-block">
-                        <iframe width="100%" height="275px" data-loader="youtube" data-src="{{$video}}"></iframe>
+                        <iframe class="lazy" width="100%" height="275px" data-loader="youtube" data-src="https://www.youtube.com/embed/{{$video}}"></iframe>
                     </div>
 
                 </div>
