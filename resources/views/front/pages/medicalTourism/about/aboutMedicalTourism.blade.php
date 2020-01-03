@@ -5,10 +5,6 @@
 {{setting(App::getLocale().'.title')}}
 @endsection
 
-@section('style')
-
-@endsection
-
 @section('content')	
 <!-- Start Page Title Section -->
 <div class="page-ttl about-bg">

@@ -5,9 +5,7 @@
 {{setting(App::getLocale().'.title')}}
 @endsection
 
-@section('style')
 
-@endsection
 
 @section('content')	
     <div class="page-ttl patients-bg">

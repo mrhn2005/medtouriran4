@@ -3528,3 +3528,11 @@ button:focus {
     border: none;
     -webkit-box-shadow: none;
 }
+
+.slider-info{
+    z-index: 99 !important;
+}
+
+.onvis{
+    display: none;
+}

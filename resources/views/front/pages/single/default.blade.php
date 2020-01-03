@@ -4,9 +4,7 @@
 {{setting(App::getLocale().'.title')}}
 @endsection
 
-@section('style')
 
-@endsection
 
 @section('content')	
     default

@@ -4,10 +4,6 @@
     @lang('home.procedure'): {{$category->getTranslatedAttribute('title')}} - {{setting(App::getLocale().'.title')}}
 @endsection
 
-@section('style')
-
-@endsection
-
 @section('content')	
     <!-- Start Page Title Section -->
     <div class="page-ttl" style="background: url({{Helper::placeholder(Voyager::image($category->main_image))}})">

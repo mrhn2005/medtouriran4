@@ -1,25 +1,18 @@
-
-    
 @extends('front.layout.front')
 
 @section('title')
 {{$doctor->getTranslatedAttribute('name')}} {{setting(App::getLocale().'.title')}}
 @endsection
 
-@section('style')
-
-@endsection
-
 @section('content')	
 <!-- Start Page Title Section -->
 <div class="page-ttl doctors-bg" style="background-image: url({{empty($doctor->grand_background)?'/images/background/toppage/doctors.png':Voyager::image($doctor->grand_background)}})">
-{{--    <div class="layer-stretch">--}}
         <div class="page-ttl-container">
             <h1>{{$doctor->getTranslatedAttribute('name')}}</h1>
-{{--            <p><a href="{{route('home')}}">@lang('home.home')</a> &#8594; <a href="{{route('service.doctor.index')}}">@lang('home.doctors')</a> &#8594; <span>{{$doctor->getTranslatedAttribute('name')}}</span></p>--}}
         </div>
-{{--    </div>--}}
-</div><!-- End Page Title Section -->
+</div>
+<!-- End Page Title Section -->
+
 <!-- Start Doctor List Section -->
 <div id="doctor-page" class="layer-stretch">
     <div class="layer-wrapper layer-bottom-10">
