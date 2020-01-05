@@ -8,12 +8,11 @@
 @section('content')	
         <!-- Start Page Title Section -->
     <div class="page-ttl {{$hotels->first()->type}}-bg">
-{{--        <div class="layer-stretch">--}}
-            <div class="page-ttl-container">
-                <h1>{{$hotels->first()->services()}}</h1>
-{{--                <p><a href="{{route('home')}}">@lang('home,home')</a> &#8594; <a href="{{route('service')}}">@lang('home.services')</a> &#8594; <span>{{$hotels->first()->service()}}</span></p>--}}
-            </div>
-{{--        </div> --}}
+        <div class="page-ttl-container">
+            <h1>{{$hotels->first()->services()}}</h1>
+        </div>
+        <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a> &#8594; <span>{{$hotels->first()->services()}}</span></p>
+
     </div><!-- End Page Title Section -->
     <!-- Start Doctor List Section -->
     <div id="hotels-page" class="layer-stretch">

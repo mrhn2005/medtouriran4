@@ -9,11 +9,13 @@
 	<!-- Google web Font -->
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400">
 	<!-- Font Awesoeme Stylesheet CSS -->
-	<link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" />
+{{--	<link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" />--}}
 	<!-- Bootstrap core CSS -->
-	<link rel="stylesheet" href="/css/bootstrap.min.css">
+{{--	<link rel="stylesheet" href="/css/bootstrap.min.css">--}}
     <!-- Custom Main Stylesheet CSS -->
-	<link rel="stylesheet" href="/css/style.css">
+{{--	<link rel="stylesheet" href="/css/style.css">--}}
+	@include('front.layout.includes.css-minified')
+
 
 </head>
 <body>
@@ -26,15 +28,15 @@
 			<a href="{{route('home')}}" class="button-icon"><span>@lang('home.back_home')</span><i class="fa fa-home"></i></a>
 {{--			<a href="#" class="button-icon"><span>Report Problem</span><i class="fa fa-bug"></i></a>--}}
 		</div>
-        <ul class="social-list notfound-social">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <!--<li><a href="#"><i class="fa fa-google"></i></a></li>-->
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-            <!--<li><a href="#"><i class="fa fa-rss"></i></a></li>-->
-        </ul>
+{{--        <ul class="social-list notfound-social">--}}
+{{--            <li><a href="#"><i class="fa fa-facebook"></i></a></li>--}}
+{{--            <li><a href="#"><i class="fa fa-twitter"></i></a></li>--}}
+{{--            <!--<li><a href="#"><i class="fa fa-google"></i></a></li>-->--}}
+{{--            <li><a href="#"><i class="fa fa-instagram"></i></a></li>--}}
+{{--            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>--}}
+{{--            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>--}}
+{{--            <!--<li><a href="#"><i class="fa fa-rss"></i></a></li>-->--}}
+{{--        </ul>--}}
     </div><!-- End Not Found Section -->
 </body>
 </html>

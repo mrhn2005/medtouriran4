@@ -9,12 +9,10 @@
 @section('content')	
 <!-- Start Page Title Section -->
 <div class="page-ttl blog-bg">
-{{--    <div class="layer-stretch">--}}
-        <div class="page-ttl-container">
-            <h1>@lang('home.blogs')</h1>
-{{--            <p><a href="{{route('home')}}">@lang('home.home')</a> &#8594; <span>Blogs</span></p>--}}
-        </div>
-{{--    </div>--}}
+    <div class="page-ttl-container">
+        <h1>@lang('home.blogs')</h1>
+    </div>
+    <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a> &#8594; <span>@lang('home.blogs')</span></p>
 </div><!-- End Page Title Section -->
 <!-- Start Blog List Section -->
 <div class="layer-stretch">

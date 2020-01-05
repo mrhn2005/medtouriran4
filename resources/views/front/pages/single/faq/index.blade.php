@@ -12,8 +12,8 @@
 {{--        <div class="layer-stretch">--}}
             <div class="page-ttl-container">
                 <h1 class="text-uppercase">@lang('home.faq')</h1>
-{{--                <p><a href="{{ route('home') }}">@lang('home.home')</a> &#8594; <span>@lang('home.faq')</span></p>--}}
             </div>
+            <p class="page-breadcrumb"><a href="{{ route('home') }}">@lang('home.home')</a> &#8594; <span>@lang('home.faq')</span></p>
 {{--        </div>--}}
     </div><!-- End Page Title Section -->
     {!! ViewHelper::faq() !!}

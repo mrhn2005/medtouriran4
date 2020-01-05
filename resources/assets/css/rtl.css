@@ -151,6 +151,9 @@ ul.menu{
 #mobile-menu--lang {
     right: 60px;
 }
+a#mobile-menu--lang-switch {
+    padding-right: 14px !important;
+}
 #mobile-menu--bar {
     right: 10px;
 }
@@ -578,4 +581,9 @@ ul .menu-dropdown-2 {
 
 #package-page .package-page--price-table tr td {
     text-align: right!important;
+}
+
+/*************   BREADCRUMBS    **********************/
+.page-breadcrumb {
+    right: 52%;
 }

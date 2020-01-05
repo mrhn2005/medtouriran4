@@ -346,6 +346,16 @@
     #hm-video-sample .video-sample-frame {
         height: 500px;
     }
+    .page-breadcrumb{
+        position: absolute;
+        bottom: 7px;
+        left: 50%;
+        width: 80%;
+        font-size: small;
+        max-width: 1170px;
+        transform: translateX(-50%);
+        margin: 15px !important;
+    }
 }
 @media only screen and (min-width: 993px) {
     #hm-video-sample .video-bg1::before {

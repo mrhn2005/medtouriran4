@@ -7,9 +7,10 @@
 @section('content')	
     <!-- Start Page Title Section -->
     <div class="page-ttl" style="background: url({{Helper::placeholder(Voyager::image($category->main_image))}})">
-            <div class="page-ttl-container">
-                <h1>{{$category->getTranslatedAttribute('title')}}</h1>
-            </div>
+        <div class="page-ttl-container">
+            <h1>{{$category->getTranslatedAttribute('title')}}</h1>
+        </div>
+        <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a> &#8594; <a href="{{route('procedure.index')}}">@lang('home.procedures')</a> &#8594; <span>{{$category->getTranslatedAttribute('title')}}</span></p>
     </div><!-- End Page Title Section -->
     <!-- Start Blog Section -->
     <div class="layer-stretch" id="procedure-page">

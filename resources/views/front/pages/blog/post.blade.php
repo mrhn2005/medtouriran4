@@ -17,12 +17,12 @@
 @section('content')	
 <!-- Start Page Title Section -->
 <div class="page-ttl" style="background: url('{{Voyager::image($single_post->grand_background)}}')">
-{{--    <div class="layer-stretch">--}}
-        <div class="page-ttl-container">
-            <h1>{{$single_post->getTranslatedAttribute('title')}}</h1>
+    <div class="page-ttl-container">
+        <h1>{{$single_post->getTranslatedAttribute('title')}}</h1>
 {{--            <h1>@lang('home.blog')</h1>--}}
 {{--            <p><a href="{{route('home')}}">@lang('home.home')</a> &#8594; <a href="{{route('blog.index')}}">@lang('home.blogs')</a> &#8594; <span>{{$single_post->getTranslatedAttribute('title')}}</span></p>--}}
-        </div>
+    </div>
+    <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a> &#8594; <a href="{{route('blog.index')}}">@lang('home.blogs')</a> &#8594; <span>{{$single_post->getTranslatedAttribute('title')}}</span></p>
 {{--    </div>--}}
 </div><!-- End Page Title Section -->
 <!-- Start Blog Section -->

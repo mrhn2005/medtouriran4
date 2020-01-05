@@ -312,6 +312,9 @@
 #mobile-menu--lang {
     left: 60px;
 }
+a#mobile-menu--lang-switch {
+    padding-left: 14px !important;
+}
 #mobile-menu--bar {
     left: 10px;
 }
@@ -402,4 +405,9 @@
     text-align: right;
     float:right;
     position: relative;
+}
+
+/*************   BREADCRUMBS    **********************/
+.page-breadcrumb {
+    left: 52%;
 }

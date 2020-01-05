@@ -8,12 +8,10 @@
 @section('content')	
         <!-- Start Page Title Section -->
     <div class="page-ttl procedures-bg">
-{{--        <div class="layer-stretch">--}}
-            <div class="page-ttl-container">
-                <h1>@lang('home.procedures')</h1>
-{{--                <p><a href="{{route('home')}}">@lang('home.home')</a> &#8594; <span></span></p>--}}
-            </div>
-{{--        </div> --}}
+        <div class="page-ttl-container">
+            <h1>@lang('home.procedures')</h1>
+        </div>
+        <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a> &#8594; <span>@lang('home.procedures')</span></p>
     </div><!-- End Page Title Section -->
     <!-- Start Service List Section --> 
     <div id="procedures-page" class="layer-stretch">

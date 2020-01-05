@@ -49,19 +49,17 @@
 
 @section('content')
     <div class="page-ttl about-bg">
-{{--        <div class="layer-stretch">--}}
-            <div class="page-ttl-container">
-                <h1>@lang('home.about_us')</h1>
-{{--                <p><a href="{{route('home')}}">@lang('home.home')</a> &#8594; <span>@lang('home.about_us')</span></p>--}}
-            </div>
-{{--        </div>--}}
+        <div class="page-ttl-container">
+            <h1>@lang('home.about_us')</h1>
+        </div>
+        <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a> &#8594; <span>@lang('home.about_us')</span></p>
     </div><!-- End Page Title Section -->
     <!-- Start About First Section  -->
     <div class="layer-stretch">
         <div class="layer-wrapper">
             <div class="layer-container row">
                 <div class="col-md-5 hm-service-left">
-                    <img src="/images/logo-color.png" alt="">
+                    <img src="/images/logo-color.png" alt="MedTourIran Logo">
                 </div>
                 <div class="col-md-7 hm-service-right">
                     <p style="    color: var(--bold-text);

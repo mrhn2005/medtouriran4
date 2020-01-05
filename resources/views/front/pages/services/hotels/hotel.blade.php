@@ -9,15 +9,14 @@
 @section('content')	
 <!-- Start Page Title Section -->
 <div class="page-ttl hotels-bg" style="background-image: url('{{Voyager::image($hotel->grand_background)}}') !important;">
-{{--    <div class="layer-stretch">--}}
-        <div class="page-ttl-container">
-            <h1>{{$hotel->getTranslatedAttribute('title')}}</h1>
-{{--            <p><a href="#">Home</a> &#8594; <a href="#">Hotels</a> &#8594; <span>{{$hotel->getTranslatedAttribute('title')}}</span></p>--}}
-            <div class="rating-stars">
-                @include('front.pages.services.hotels.includes.rating-stars',["star"=>$hotel->star])
-            </div>
-{{--        </div>--}}
+    <div class="page-ttl-container">
+        <h1>{{$hotel->getTranslatedAttribute('title')}}</h1>
+        <div class="rating-stars">
+            @include('front.pages.services.hotels.includes.rating-stars',["star"=>$hotel->star])
+        </div>
     </div>
+{{--  todo : lotfan dar 2vomin tag a in route HOTEL/MEDICALCENTER/HOSTEL ro vared konid  --}}
+    <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a> &#8594; <a href="#">{{$hotel->service()}}</a> &#8594; <span>{{$hotel->getTranslatedAttribute('title')}}</span></p>
 </div><!-- End Page Title Section -->
 <!-- Start Service Section -->
 <div id="hotel-page">

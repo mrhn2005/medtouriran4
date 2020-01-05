@@ -11,8 +11,8 @@
 {{--    <div class="layer-stretch">--}}
         <div class="page-ttl-container">
             <h1>About Medical Tourism</h1>
-{{--            <p><a href="{{route('home')}}">Home</a> &#8594; <span>MedTourIran</span></p>--}}
         </div>
+        <p><a href="{{route('home')}}">Home</a> &#8594; <span>MedTourIran</span></p>
 {{--    </div>--}}
 </div><!-- End Page Title Section -->
 <!-- Start Blog List Section -->

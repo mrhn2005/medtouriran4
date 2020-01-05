@@ -47,13 +47,15 @@
             </div>
             </form>
         </div>
+        <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a> &#8594; <span>@lang('home.search')</span></p>
+
     </div><!-- End Page Title Section -->
     <!-- Start Doctor List Section -->
     <!-- Start Doctor List Section -->
     <div id="packages-page" class="layer-stretch">
         <div class="layer-wrapper text-center">
             <div class="filter-menu m-0 mb-5">
-                <button class="type-filter active" data-filter="all">All</button>
+                <button class="type-filter active" data-filter="all">@lang('home.all')</button>
                 @foreach ($cities as $city)
                 <button class="type-filter" data-filter="{{Helper::remove_space($city->title)}}">{{$city->getTranslatedAttribute('title')}}</button>
                 @endforeach

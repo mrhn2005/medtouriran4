@@ -13,12 +13,10 @@
 @section('content')	
         <!-- Start Page Title Section -->
     <div class="page-ttl packages-bg" style="background-image: url('{{Voyager::image($package->grand_background)}}')">
-{{--        <div class="layer-stretch">--}}
-            <div class="page-ttl-container">
-                <h1>{{$package->getTranslatedAttribute('title')}}</h1>
-{{--                <p><a href="{{route('home')}}">@lang('home.home')</a> &#8594; <a href="{{route('package.index')}}">@lang('home.packages')</a> &#8594; <span>{{$package->getTranslatedAttribute('title')}}</span></p>--}}
-            </div>
-{{--        </div> --}}
+        <div class="page-ttl-container">
+            <h1>{{$package->getTranslatedAttribute('title')}}</h1>
+        </div>
+        <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a> &#8594; <a href="{{route('package.index')}}">@lang('home.packages')</a> &#8594; <span>{{$package->getTranslatedAttribute('title')}}</span></p>
     </div><!-- End Page Title Section -->
     <!-- Start package List Section -->
         <!-- Start Blog Section -->

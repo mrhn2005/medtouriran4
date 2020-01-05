@@ -358,6 +358,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .flexslider .slides img {
     height: 320px;
+    max-width: 100% !important;
 }
 
 .owl-item{
@@ -3056,7 +3057,7 @@ button:focus {
 
 #mobile-menu--lang {
     text-align: center;
-    height: 48px;
+    height: 40px;
     top: 10px;
     padding: 6px 5px;
     position: absolute;
@@ -3066,19 +3067,20 @@ button:focus {
 #mobile-menu--lang a{
     font-weight: 600;
     color: #fff;
+    text-align: center;
     font-size: 13px;
+    height: 30px;
     padding: 0 5px!important;
-    /* width: 60px!important; */
-    min-width: 60px !important;
+    min-width: 60px!important;
 }
 #mobile-menu--lang .mobile-menu--lang-list {
     padding: 0;
     list-style: none;
-    line-height: 18px!important;
+    line-height: 0px!important;
     margin: 0;
-    height: 120px;
+    height: 95px;
     position: absolute;
-    top: 42px;
+    top: 36px;
     border-radius: 2px;
     background-color: rgba(158,158,158,.4);
     left: 5px;
@@ -3535,4 +3537,21 @@ button:focus {
 
 .onvis{
     display: none;
+}
+
+/*************   BREADCRUMBS    **********************/
+.page-breadcrumb{
+    position: absolute;
+    bottom: 0;
+    /*left: 52%;*/
+    width: 100%;
+    max-width: 1170px;
+    transform: translateX(-50%);
+/* left: 0; */
+/* width: fit-content; */
+    margin: 15px 0;
+    color: #ffffffa8;
+}
+.page-breadcrumb>a {
+    color: white;
 }

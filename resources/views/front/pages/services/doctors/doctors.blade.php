@@ -9,12 +9,11 @@
 @section('content')	
 <!-- Start Page Title Section -->
 <div class="page-ttl doctors-bg">
-{{--    <div class="layer-stretch">--}}
         <div class="page-ttl-container">
             <h1>@lang('home.doctors')</h1>
-{{--            <p><a href="{{route('home')}}">Home</a> &#8594; <span>Doctors</span></p>--}}
         </div>
-{{--    </div>--}}
+    <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a> &#8594; <span>@lang('home.doctors')</span></p>
+
 </div><!-- End Page Title Section -->
 <!-- Start Doctor List Section -->
     <div id="doctors-page" class="layer-stretch">

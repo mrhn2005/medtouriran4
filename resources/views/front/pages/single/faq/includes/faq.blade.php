@@ -1,7 +1,7 @@
 <!-- Start Faq Section -->
 <div class="layer-stretch" id="faq-page">
     <div class="layer-wrapper text-center">
-        <div class="layer-fixed">
+{{--        <div class="layer-fixed">--}}
             <div class="theme-accordion-container">
                 @foreach ($faqs as $faq)
                     <div class="theme-accordion">
@@ -18,6 +18,6 @@
                     </div>
                 @endforeach
             </div>
-        </div>
+{{--        </div>--}}
     </div>
 </div><!-- End FAQ Section -->

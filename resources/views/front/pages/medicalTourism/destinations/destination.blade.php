@@ -13,8 +13,8 @@
 {{--    <div class="layer-stretch">--}}
         <div class="page-ttl-container">
             <h1>{{$city->getTranslatedAttribute('title')}}</h1>
-{{--            <p><a href="{{ route('home') }}">@lang('home.home')</a> &#8594; <a href="{{ route('aboutMedical') }}"> @lang('home.medtouriran') </a> &#8594; <a href="{{ route('aboutMedical.destination.index') }}">@lang('home.destinations')</a> &#8594; <span>{{$city->getTranslatedAttribute('title')}}</span></p>--}}
         </div>
+        <p class="page-breadcrumb"><a href="{{ route('home') }}">@lang('home.home')</a> &#8594; <a href="{{ route('aboutMedical.destination.index') }}">@lang('home.destinations')</a> &#8594; <span>{{$city->getTranslatedAttribute('title')}}</span></p>
 {{--    </div>--}}
 </div><!-- End Page Title Section -->
 <!-- Start Blog List Section -->
