@@ -82,7 +82,7 @@ return [
     "blogs"=>"Blogs",
     "procedures"=>"Procedures",
     "procedure"=>"Procedure",
-    "faq"=>"faq",
+    "faq"=>"FAQ",
 
     "our_medicals_centers"=>"Our Medical Centers",
     "our_hostels_apartments"=>"Our Hostels & Apartments",

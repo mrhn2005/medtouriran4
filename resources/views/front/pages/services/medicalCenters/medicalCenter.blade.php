@@ -14,7 +14,7 @@
 {{--    <div class="layer-stretch">--}}
         <div class="page-ttl-container">
             <h1>Hospital Felan</h1>
-{{--            <p><a href="{{route('home')}}">Home</a> &#8594; <a href="{{route('service')}}">Services</a> &#8594; <a href="{{route('service.medicalCenter.index')}}">Medical Centers</a> &#8594; <span>Medical Center</span></p>--}}
+            <p><a href="{{route('home')}}">Home</a> &#8594; <a href="{{route('service')}}">Services</a> &#8594; <a href="{{route('service.medicalCenter.index')}}">Medical Centers</a> &#8594; <span>Medical Center</span></p>
         </div>
 {{--    </div>--}}
 </div><!-- End Page Title Section -->

@@ -13,7 +13,7 @@
     <div class="page-ttl faq-bg">
 {{--        <div class="layer-stretch">--}}
             <div class="page-ttl-container">
-                <h1>@lang('home.faq')</h1>
+                <h1 class="text-uppercase">@lang('home.faq')</h1>
 {{--                <p><a href="{{ route('home') }}">@lang('home.home')</a> &#8594; <span>@lang('home.faq')</span></p>--}}
             </div>
 {{--        </div>--}}
