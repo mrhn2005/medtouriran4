@@ -71,7 +71,10 @@ class Package extends Model
     }
 
     public function city_class(){
-        return strtolower(Helper::remove_space($this->city()->title));
+        if($this->city()){
+            return strtolower(Helper::remove_space($this->city()->title));
+        }
+        return '';
     }
 
     public function scopeRelations($query)
