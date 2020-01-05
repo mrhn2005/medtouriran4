@@ -3346,12 +3346,14 @@ button:focus {
 #doctors-page .doctors-page-city {
     color: white;
     font-size: 15px;
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
 }
 #doctors-page .doctors-page-name h4{
-    color: white;
-    font-size: 21px;
+    color: #fff;
+    font-size: 19px;
     font-weight: 500;
+    height: 100%;
+    margin: 0;
 }
 #doctors-page .doctors-page-options h6{
     font-size: 13px;
