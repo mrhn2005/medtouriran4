@@ -5,19 +5,12 @@
 {{setting(App::getLocale().'.title')}}
 @endsection
 
-@section('style')
-
-@endsection
-
 @section('content')	
 <!-- Start Page Title Section -->
 <div class="page-ttl destinations-bg">
-{{--    <div class="layer-stretch">--}}
         <div class="page-ttl-container">
             <h1>@lang('home.destinations')</h1>
-{{--            <p><a href="{{('home')}}">@lang('home.medtouriran')</a> &#8594; <span>@lang('home.destinations')</span></p>--}}
         </div>
-{{--    </div>--}}
 </div><!-- End Page Title Section -->
 <!-- Start Doctor List Section -->
 <div id="destinations-page" class="layer-stretch">

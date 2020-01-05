@@ -11,89 +11,43 @@ const mix = require('laravel-mix');
  | file for the application as well as bundling up all the JS files.
  |
  */
-//
-// mix.js('resources/js/app.js', 'public/js')
-//     .sass('resources/sass/app.scss', 'public/css');
-//
-
-
-    // .copy('public/css/variable.css','public/dist/variable.css')
-    // .styles(
-    //     [
-    //     // 'public/fonts/font-awesome/css/font-awesome.css',
-    //     'public/fonts/nunito/nunito.css',
-    //     'public/fonts/tajawal/tajawal.css',
-    //     'public/fonts/comfortaa/comfortaa.css',
-    //     'public/fonts/medical-icons/css/wfmi-style.css',
-    //     'public/fonts/flat-icon/flaticon.css',
-    //     'https://use.fontawesome.com/releases/v5.8.2/css/all.css',
-    //     'https://use.fontawesome.com/releases/v5.8.2/css/v4-shims.css'
-    // ], 'public/dist/fonts-all.css')
-    // .styles('public/css/bootstrap.min.css','public/dist/bootstrap.min.css')
 mix
-    // .styles([
-    //     // 'public/css/material.min.css',
-    //     // 'public/css/mdl-selectfield.min.css',
-    //     'public/css/owl.carousel.min.css',
-    //     'public/css/owl.theme.default.css',
-    //     'public/css/animate.min.css',
-    //     'public/css/magnific-popup.css',
-    //     'public/css/flexslider.css',
-    //     'public/css/style.css',
-    //     'public/css/toastr.min.css',
-    //     'public/css/whatsapp.css',
-    // ], 'public/dist/vendor.css')
+    .sass('resources/assets/sass/app.scss', 'public/css')
+    .sass('resources/assets/sass/languages/en.scss', 'public/css/languages')
+    .sass('resources/assets/sass/languages/ar.scss', 'public/css/languages')
+    .sass('resources/assets/sass/languages/ku.scss', 'public/css/languages')
+    .sass('resources/assets/sass/languages/ru.scss', 'public/css/languages')
+    .styles('resources/assets/css/package-timeline.css', 'public/css/package-timeline.css')
+    .styles('resources/assets/css/services-timeline.css', 'public/css/services-timeline.css')
     .styles([
-        'public/css/variable.css',
-        // 'public/css/fixed-social-bar.css',
-        'public/css/rtl.css',
-        'public/css/custom.css',
-        'public/css/responsive.css',
-    ], 'public/dist/rtl-all.css')
+        'resources/assets/css/bootstrap4rtl.css',
+        'resources/assets/css/variable.css',
+        'resources/assets/css/rtl.css',
+        'resources/assets/css/custom.css',
+        'resources/assets/css/responsive.css',
+    ], 'public/css/rtl-all.css')
     .styles([
-        'public/css/variable.css',
-        // 'public/css/fixed-social-bar.css',
-        'public/css/ltr.css',
-        'public/css/custom.css',
-        'public/css/responsive.css',
-    ], 'public/dist/ltr-all.css');
-    // .options({
-    //     processCssUrls: true
-    // });
-    // .purgeCss({
-    //     enabled: true
-    // });
-mix
-    // .scripts([
-    //     // 'public/js/material.min.js',
-    //     // 'public/js/mdl-selectfield.min.js',
-    //     'public/js/moment.min.js',
-    //     'public/js/fullcalendar.min.js',
-    //     'public/js/owl.carousel.min.js',
-    //     'public/js/jquery-scrolltofixed.min.js',
-    //     'public/js/jquery.magnific-popup.min.js',
-    //     'public/js/jquery.waypoints.min.js',
-    //     'public/js/jquery.counterup.js',
-    //     'public/js/smoothscroll.min.js',
-    //     'public/js/jquery.lazy.min.js',
-    //     'public/js/jquery.lazy.youtube.min.js',
-    //     'public/js/toastr.min.js',
-    //     'public/js/lazyload.min.js',
-    //     'public/js/whatsapp.js',
-    // ],'public/dist/vendor.js')
+        'resources/assets/css/variable.css',
+        'resources/assets/css/ltr.css',
+        'resources/assets/css/custom.css',
+        'resources/assets/css/responsive.css',
+    ], 'public/css/ltr-all.css')
+    
+    .js('resources/assets/js/app.js', 'public/js')
     .scripts([
-        'public/js/rtl.js',
-        'public/js/custom.js',
-    ],'public/dist/rtl-all.js')
+        'resources/assets/js/bootstrap4rtl.min.js',
+        'resources/assets/js/rtl.js',
+        'resources/assets/js/custom.js',
+    ],'public/js/rtl-all.js')
     .scripts([
-        'public/js/ltr.js',
-        'public/js/custom.js',
-    ],'public/dist/ltr-all.js')
+        'resources/assets/js/ltr.js',
+        'resources/assets/js/custom.js',
+    ],'public/js/ltr-all.js')
     // .options({
     //     uglify: true
     // })
     ;
 
-// if (mix.inProduction()) {
-//     mix.version();
-// }
+if (mix.inProduction()) {
+    mix.version();
+}

@@ -1,0 +1,38 @@
+p, h1,h2, h3, h3, h4, h5, h6, input, form, button, li, .paragraph-medium{
+    font-family: 'rudaw'!important;
+    font-weight: 400!important;
+    letter-spacing: .2px !important;
+}
+#header-1 .menu a, #mobile-menu--hdr .menu a {
+    font-weight: 400!important;
+}
+.menu>li>a {
+    font-size: 15px !important;
+    min-width: 42px;
+    font-weight: 400!important;
+}
+.menu>li {
+    padding: 10px 2px !important;
+}
+.wa__btn_popup .wa__btn_popup_txt {
+
+    font-family: 'rudaw', sans-serif !important;
+}
+.sub-ttl {
+    font-family: 'rudaw', sans-serif !important;
+}
+.menu > li > a {
+    font-family: 'rudaw', sans-serif !important;
+}
+.menu li li a {
+    font-family: 'rudaw', sans-serif !important;
+}
+@media screen and (max-width: 690px) {
+    #hm-slider .slider-info p {
+        font-size: 14px !important;
+    }
+    #hm-slider .slider-info {
+        position: absolute;
+        top: 21%;
+    }
+}

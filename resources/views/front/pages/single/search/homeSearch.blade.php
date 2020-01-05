@@ -5,9 +5,7 @@
 {{setting(App::getLocale().'.title')}}
 @endsection
 
-@section('style')
 
-@endsection
 
 <!--<div class="col-offset-6 col-md-6">-->
 

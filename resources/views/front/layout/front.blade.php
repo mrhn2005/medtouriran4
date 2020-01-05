@@ -14,7 +14,7 @@
     </title>
     
     <!-- Favicon Icon -->
-    <link rel="icon" type="image/png" href="/images/logo-color.png" />
+    <link rel="icon" type="image/png" href="/images/logo-favicon.png" />
     <style>
     #preloader{
     width: 100vw;

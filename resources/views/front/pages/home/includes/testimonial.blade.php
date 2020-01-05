@@ -10,7 +10,7 @@
                     @foreach($videos as $video)
                     <div class="testimonial-block">
                         <div class="video-sample-frame">
-                            <iframe  data-loader="youtube" data-src="{{$video->video}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media;" allowfullscreen></iframe>
+                            <iframe class="lazy" data-loader="youtube" data-src="https://www.youtube.com/embed/{{$video->video}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media;" allowfullscreen></iframe>
                         </div>
                         <div class="paragraph-medium paragraph-white">
                             <i class="fa fa-quote-left"></i>

@@ -4,9 +4,7 @@
 {{setting(App::getLocale().'.title')}}
 @endsection
 
-@section('style')
 
-@endsection
 
 @section('content')	
 <!-- Start Page Title Section -->
@@ -278,59 +276,5 @@
    
    
 @section('js')
-
-<script type="text/javascript">
-    $('#medical-center-page--main-carousel').owlCarousel({
-        loop:true,
-        center: true,
-        autoplay: true,
-        items: 1,
-        nav: false,
-        dots: true,
-        margin: 10,
-        smartSpeed: 1000,
-        autoplayTimeout: 3000,
-        autoplayHoverPause: true,
-        // responsiveClass: true,
-        // responsive: {
-        //     0: {
-        //         items: 1,
-        //         nav: false
-        //     },
-        //     600: {
-        //         items: 1,
-        //         nav: false
-        //     },
-        //     992: {
-        //         items: 3,
-        //         nav: false
-        //     }
-        // }
-    });
-    $('#medical-center-page--gallery-carousel').owlCarousel({
-        loop:true,
-        center: true,
-        autoplay: true,
-        items: 3,
-        // margin: 10,
-        smartSpeed: 1000,
-        autoplayTimeout: 3000,
-        autoplayHoverPause: true,
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1,
-                nav: false
-            },
-            600: {
-                items: 1,
-                nav: false
-            },
-            992: {
-                items: 3,
-                nav: false
-            }
-        }
-    });
-</script>
+    <script src="{{asset('js/pages/medical-centers.js')}}" defer></script>
 @endsection

@@ -29,7 +29,7 @@
                     <div class="theme-material-card">
                         @if(!empty($package->video))
                         <div id="package-page--main-video">
-                            <iframe width="560" height="315" data-loader="youtube" data-src="{{$package->video}}"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe class="lazy" width="560" height="315" data-loader="youtube" data-src="https://www.youtube.com/embed/{{$package->video}}"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         @endif
                         <h2 class="blog-ttl">@lang('home.medical_tourism_timeline')</h2>
@@ -93,7 +93,7 @@
                             @foreach(explode(";",$package->getTranslatedAttribute('testimonial')) as $video)
                             <div class="col-md-12 ">
                                 <div class="theme-block">
-                                    <iframe width="100%" height="400px" data-loader="youtube" data-src="{{$video}}"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe class="lazy" width="100%" height="400px" data-loader="youtube" data-src="https://www.youtube.com/embed/{{$video}}"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
                             </div>
                             @endforeach
