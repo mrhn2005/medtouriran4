@@ -53,30 +53,32 @@
                 <div class="layer-container">
                     <div id="package-page--packages-slider" class="@if($count_packages>2)owl-carousel owl-theme theme-owl-dot @endif">
                         @foreach($category->packages as $package)
-                            @foreach($package->children as $child)
-                            <div class="package-page--packages package-page--packages-box {{$child->city_class()}}">
-                                <div class="package-page--packages-overlay"></div>
-                                <div class="package-page--packages-title">
-                                    <h2>{{$package->getTranslatedAttribute('title')}}</h2>
-                                    <h3>{{$child->city()->getTranslatedAttribute('title')}}</h3>
-                                </div>
-                                <div class="package-page--packages-price">
-                                    <h3>${{$child->getTranslatedAttribute('price')}}</h3>
-                                </div>
-                                <div class="package-page--packages-options">
-                                    <ul class="package-page--packages-list">
-                                        @foreach($child->items as $item)
-                                            <li>{{$item->getTranslatedAttribute('title')}}</li>
-                                        @endforeach
-                                    </ul>
-                                </div>
-                                <div class="package-page--packages-button">
-                                         <button class="button--default button--secendary">@lang('home.book')</button>	
+                            @if(count($package->children)>0)
+                                @foreach($package->children as $child)
+                                    <div class="package-page--packages package-page--packages-box {{$child->city_class()}}">
+                                        <div class="package-page--packages-overlay"></div>
+                                        <div class="package-page--packages-title">
+                                            <h2>{{$package->getTranslatedAttribute('title')}}</h2>
+                                            <h3>{{$child->city()?$child->city()->getTranslatedAttribute('title'):''}}</h3>
+                                        </div>
+                                        <div class="package-page--packages-price">
+                                            <h3>${{$child->getTranslatedAttribute('price')}}</h3>
+                                        </div>
+                                        <div class="package-page--packages-options">
+                                            <ul class="package-page--packages-list">
+                                                @foreach($child->items as $item)
+                                                    <li>{{$item->getTranslatedAttribute('title')}}</li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+                                        <div class="package-page--packages-button">
+                                                <button class="button--default button--secendary">@lang('home.book')</button>	
 
-                                </div>
+                                        </div>
 
-                            </div>
-                            @endforeach
+                                    </div>
+                                @endforeach
+                            @endif
                         @endforeach
                     </div>
                     @if($count_packages>2)
