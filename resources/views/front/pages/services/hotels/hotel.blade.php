@@ -15,8 +15,7 @@
             @include('front.pages.services.hotels.includes.rating-stars',["star"=>$hotel->star])
         </div>
     </div>
-{{--  todo : lotfan dar 2vomin tag a in route HOTEL/MEDICALCENTER/HOSTEL ro vared konid  --}}
-    <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a> &#8594; <a href="#">{{$hotel->service()}}</a> &#8594; <span>{{$hotel->getTranslatedAttribute('title')}}</span></p>
+    <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a> &#8594; <a href="{{route('service.hotel.index', $hotel->type)}}">{{$hotel->services()}}</a> &#8594; <span>{{$hotel->getTranslatedAttribute('title')}}</span></p>
 </div><!-- End Page Title Section -->
 <!-- Start Service Section -->
 <div id="hotel-page">
@@ -30,7 +29,6 @@
                     <div class="hotel-page--location">
                         <i class="fas fa-map-marker-alt"></i>@lang('home.iran'), {{$hotel->city->getTranslatedAttribute('title')}}
                     </div>
-{{--                    <div class="theme-img"><img src="{{Helper::placeholder(Voyager::image($hotel->image))}}" alt="{{$hotel->getTranslatedAttribute('title')}}"></div>--}}
                     <div class="service-post">
                         {!! $hotel->getTranslatedAttribute('description') !!}
                     </div>

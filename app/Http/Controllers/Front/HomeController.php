@@ -187,7 +187,7 @@ class HomeController extends Controller
             $q->where('title', $tag_title);
         })->paginate($this->package_per_packages);
 
-        return view('front.pages.blog.posts', compact('posts'));
+        return view('front.pages.blog.posts', compact('posts', 'tag'));
     }
 
 

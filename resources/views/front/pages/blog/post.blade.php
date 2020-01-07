@@ -31,16 +31,11 @@
         <div class="row">
             <div class="col-lg-8 text-center">
                 <div class="theme-material-card">
-{{--                    <div class="theme-img blog-picture">--}}
-{{--                        <img  src="{{Helper::placeholder(Voyager::image($single_post->thumbnail('medium')))}}" alt="{{$single_post->getTranslatedAttribute('title')}}">--}}
-{{--                    </div>--}}
                     <ul class="blog-detail">
-{{--                        <li><i class="fa fa-user-o"></i>{{$single_post->authorId->name}}</li>--}}
                         <li><i class="fa fa-calendar-o"></i>{{$single_post->created_at->format('d M Y')}}</li>
                         <li><i class="fa fa-comment-o"></i>{{count($single_post->reviews)}}</li>
                     </ul>
                     <h3 class="font-weight-700 template-title">@lang('home.template_list')</h3>
-{{--                    <p></p>--}}
                     {!! $single_post->getTranslatedAttribute('body') !!}
                     <div class="row blog-meta">
                         <div class="col-sm-7 blog-tag">

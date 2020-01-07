@@ -10,9 +10,17 @@
 <!-- Start Page Title Section -->
 <div class="page-ttl blog-bg">
     <div class="page-ttl-container">
-        <h1>@lang('home.blogs')</h1>
+        <h1>{{\Request::is('*blogs/tag*')?'#'.$tag->getTranslatedAttribute('title'):__('home.blogs')}}</h1>
     </div>
-    <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a> &#8594; <span>@lang('home.blogs')</span></p>
+    <p class="page-breadcrumb">
+        <a href="{{route('home')}}">@lang('home.home')</a> &#8594;
+        @if(\Request::is('*blogs/tag*'))
+        <a href="{{route('blog.index')}}">@lang('home.blogs')</a> &#8594;
+        <span>#{{$tag->getTranslatedAttribute('title')}}</span>
+        @else
+        <span>@lang('home.blogs')</span>
+        @endif
+    </p>
 </div><!-- End Page Title Section -->
 <!-- Start Blog List Section -->
 <div class="layer-stretch">
@@ -23,7 +31,6 @@
                 <div class="theme-material-card blog-full-block">
                     <div class="row">
                         <div class="col-sm-4">
-{{--                            <div class="blog-full-date">{{$post->created_at->format('d M Y')}}</div>--}}
                             <div class="theme-img theme-img-scalerotate">
                                 <img class="lazy" data-src="{{Helper::placeholder(Voyager::image($post->thumbnail('medium')))}}" alt="{{$post->getTranslatedAttribute('title')}}">
                             </div>
