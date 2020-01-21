@@ -52,7 +52,7 @@
         <div class="page-ttl-container">
             <h1>@lang('home.about_us')</h1>
         </div>
-        <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a> &#8594; <span>@lang('home.about_us')</span></p>
+        <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a> @lang('home.arrow') <span>@lang('home.about_us')</span></p>
     </div><!-- End Page Title Section -->
     <!-- Start About First Section  -->
     <div class="layer-stretch">
