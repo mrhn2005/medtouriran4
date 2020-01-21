@@ -1,3 +1,6 @@
+@php
+    $is_rtl=Helper::isRtl();
+@endphp
 <link rel="stylesheet" href="{{mix('css/app.css')}}">
 
 @if(!$is_rtl)
