@@ -94,7 +94,18 @@
         </div>
     </div><!-- End Doctor Section -->
     @endif
-
+    <div class="layer-stretch">
+        <div class="layer-wrapper">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+{{--                    <div class="theme-material-card">--}}
+{{--                        --}}
+{{--                    </div>--}}
+                    @include('front.common.review-form')
+                </div>
+            </div>
+        </div>
+    </div>
     <form action="{{route('category.request')}}" class="form-horizontal cform-2" method="post">
     @csrf
     @include('front.common.form')
@@ -119,4 +130,3 @@
         <script src="{{asset('js/pages/package.js')}}" defer></script>                          
     @endsection
 @endif
-

@@ -61,7 +61,9 @@
                 @include('front.common.review-form')
                 </form>
             </div>
-            {!! ViewHelper::blog_sidebar() !!}
+            <div class="col-lg-4 col-sm-12">
+                {!! ViewHelper::blog_sidebar() !!}
+            </div>
         </div>
     </div>
 </div><!-- End Blog Section -->
