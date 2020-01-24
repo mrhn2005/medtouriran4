@@ -2,7 +2,7 @@
     @if(count($reviews->where('active', 1))>0)
         <div class="sub-ttl layer-ttl-white">@lang('home.reviews') ({{count($reviews)}})</div>
         <ul class="comment-section">
-            @foreach($reviews->where('active', 1) as $review)
+            @foreach($reviews->where('active', 1)->where('parent_id',null) as $review)
                 <li class="comment user-comment">
                     <div class="info">
                         <p>{{$review->name}}</p>
