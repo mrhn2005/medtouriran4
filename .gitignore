@@ -16,3 +16,8 @@ yarn-error.log
 /vendor.*
 /hooks
 medtouriran.sql
+public/css
+public/js/app.js
+public/js/ltr-all.js
+public/js/rtl-all.js
+public/mix-manifest.json
