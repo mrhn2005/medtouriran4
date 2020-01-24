@@ -22,7 +22,7 @@
 {{--            <h1>@lang('home.blog')</h1>--}}
 {{--            <p><a href="{{route('home')}}">@lang('home.home')</a> &#8594; <a href="{{route('blog.index')}}">@lang('home.blogs')</a> &#8594; <span>{{$single_post->getTranslatedAttribute('title')}}</span></p>--}}
     </div>
-    <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a> &#8594; <a href="{{route('blog.index')}}">@lang('home.blogs')</a> &#8594; <span>{{$single_post->getTranslatedAttribute('title')}}</span></p>
+    <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a> @lang('home.arrow') <a href="{{route('blog.index')}}">@lang('home.blogs')</a> @lang('home.arrow') <span>{{$single_post->getTranslatedAttribute('title')}}</span></p>
 {{--    </div>--}}
 </div><!-- End Page Title Section -->
 <!-- Start Blog Section -->
@@ -61,7 +61,9 @@
                 @include('front.common.review-form')
                 </form>
             </div>
-            {!! ViewHelper::blog_sidebar() !!}
+            <div class="col-lg-4 col-sm-12">
+                {!! ViewHelper::blog_sidebar() !!}
+            </div>
         </div>
     </div>
 </div><!-- End Blog Section -->

@@ -13,7 +13,7 @@
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
         // responsiveClass: true,
-        nav: false,
+        nav: true,
         // navContainer: '.owl-theme .owl-nav',
         navText: [
             '<i class="fa fa-angle-left"></i>',

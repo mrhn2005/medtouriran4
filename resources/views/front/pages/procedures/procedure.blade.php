@@ -10,7 +10,7 @@
         <div class="page-ttl-container">
             <h1>{{$category->getTranslatedAttribute('title')}}</h1>
         </div>
-        <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a> &#8594; <a href="{{route('procedure.index')}}">@lang('home.procedures')</a> &#8594; <span>{{$category->getTranslatedAttribute('title')}}</span></p>
+        <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a> @lang('home.arrow') <a href="{{route('procedure.index')}}">@lang('home.procedures')</a> @lang('home.arrow') <span>{{$category->getTranslatedAttribute('title')}}</span></p>
     </div><!-- End Page Title Section -->
     <!-- Start Blog Section -->
     <div class="layer-stretch" id="procedure-page">
@@ -94,7 +94,18 @@
         </div>
     </div><!-- End Doctor Section -->
     @endif
-
+    <div class="layer-stretch">
+        <div class="layer-wrapper">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+{{--                    <div class="theme-material-card">--}}
+{{--                        --}}
+{{--                    </div>--}}
+                    @include('front.common.review-form')
+                </div>
+            </div>
+        </div>
+    </div>
     <form action="{{route('category.request')}}" class="form-horizontal cform-2" method="post">
     @csrf
     @include('front.common.form')
@@ -119,4 +130,3 @@
         <script src="{{asset('js/pages/package.js')}}" defer></script>                          
     @endsection
 @endif
-

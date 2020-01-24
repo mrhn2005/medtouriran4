@@ -16,7 +16,7 @@
         <div class="page-ttl-container">
             <h1>{{$package->getTranslatedAttribute('title')}}</h1>
         </div>
-        <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a> &#8594; <a href="{{route('package.index')}}">@lang('home.packages')</a> &#8594; <span>{{$package->getTranslatedAttribute('title')}}</span></p>
+        <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a> @lang('home.arrow') <a href="{{route('package.index')}}">@lang('home.packages')</a> @lang('home.arrow') <span>{{$package->getTranslatedAttribute('title')}}</span></p>
     </div><!-- End Page Title Section -->
     <!-- Start package List Section -->
         <!-- Start Blog Section -->
@@ -37,11 +37,8 @@
                         <div class="row" id="package-page--info">
                             <div class="col-md-4 col-sm-12">
                                 <div class="doctor-details package-page--inclusions">
-                                    <div class="doctor-specility">
+                                    <div class="sub-ttl">
                                         <h3>@lang('home.inclusions')</h3>
-                                        <p>
-                                            @include('front.pages.packages.includes.cities')
-                                        </p>
                                     </div>
                                     <div class="doctor-details-extra">
                                         <div class="doctor-details-extra-3">
@@ -51,7 +48,7 @@
                                 </div>
                                 @if(!empty($package->getTranslatedAttribute('pricing')))
                                 <div class="doctor-details package-page--pricing">
-                                    <div class="doctor-specility">
+                                    <div class="sub-ttl">
                                         <h3>@lang('home.pricing')</h3>
                                     </div>
                                     <table class="package-page--price-table">

@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'arrow' => '&#8594;',
     'our_services' => 'Our Services',
     'services' => 'Services',
     'services_sub' => 'We Are Here to Provide You Awesome Service Always',
@@ -182,6 +183,7 @@ return [
 
 
     "more_info"=>"more info",
-    "about_us_desc"=>"MedtourIran is an organization established in Tehran, which provides A to Z services for medical tourists in Iran. The verified medical doctors, high quality accommodation and transfer services are the main values of MedtourIran.",
 
+    "about_us_desc"=>"MedtourIran is an organization established in Tehran, which provides A to Z services for medical tourists in Iran. The verified medical doctors, high quality accommodation and transfer services are the main values of MedtourIran.",
+    "enter_keyword"=>"Enter Any Keyword"
 ];

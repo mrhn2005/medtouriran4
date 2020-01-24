@@ -14,7 +14,7 @@
         <div class="page-ttl-container">
             <h1>{{$city->getTranslatedAttribute('title')}}</h1>
         </div>
-        <p class="page-breadcrumb"><a href="{{ route('home') }}">@lang('home.home')</a> &#8594; <a href="{{ route('aboutMedical.destination.index') }}">@lang('home.destinations')</a> &#8594; <span>{{$city->getTranslatedAttribute('title')}}</span></p>
+        <p class="page-breadcrumb"><a href="{{ route('home') }}">@lang('home.home')</a> @lang('home.arrow') <a href="{{ route('aboutMedical.destination.index') }}">@lang('home.destinations')</a> @lang('home.arrow') <span>{{$city->getTranslatedAttribute('title')}}</span></p>
 {{--    </div>--}}
 </div><!-- End Page Title Section -->
 <!-- Start Blog List Section -->

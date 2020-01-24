@@ -1,4 +1,4 @@
-<div class="col-lg-4 col-sm-12">
+
     <div class="theme-material-card">
         <div class="sub-ttl">@lang('home.recent_post')</div>
         @foreach($recent_posts as $post)
@@ -51,4 +51,5 @@
         <a href="{{route('tag.show',[$tag,$tag->slug])}}" class="theme-tag theme-tag-2">{{$tag->getTranslatedAttribute('title')}}</a> 
         @endforeach
     </div>
-</div>
+
+
