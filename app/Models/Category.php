@@ -50,4 +50,8 @@ class Category extends Cat
         return strtolower($this->parent->title);
     }
 
+    public function reviews()
+    {
+        return $this->morphMany('App\Models\Review', 'reviewable');
+    }
 }

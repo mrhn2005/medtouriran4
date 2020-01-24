@@ -155,7 +155,7 @@
                     @csrf
                     <input type="hidden" value="{{get_class($package)}}" name="reviewable_type">
                     <input type="hidden" value="{{$package->id}}" name="reviewable_id">
-                    @include('front.common.review-form')
+                    @include('front.common.review-form-procedures')
                     </form>
                 </div>
             </div>    

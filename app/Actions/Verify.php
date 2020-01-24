@@ -36,8 +36,6 @@ class Verify extends AbstractAction
 
     public function shouldActionDisplayOnDataType()
     {
-        $row = DB::table($this->dataType->name)->where('id', $this->data->id)->first();
-
-        return $this->dataType->slug == 'reviews' and $row->active == 0 ;
+        return $this->dataType->slug == 'reviews';
     }
 }

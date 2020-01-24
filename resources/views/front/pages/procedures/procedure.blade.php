@@ -98,10 +98,12 @@
         <div class="layer-wrapper">
             <div class="row">
                 <div class="col-lg-12 text-center">
-{{--                    <div class="theme-material-card">--}}
-{{--                        --}}
-{{--                    </div>--}}
-                    @include('front.common.review-form')
+                    <form action="{{route('comment_store')}}" class="form-horizontal cform-2" method="post">
+                    @csrf
+                    <input type="hidden" value="{{get_class($category)}}" name="reviewable_type">
+                    <input type="hidden" value="{{$category->id}}" name="reviewable_id">
+                    @include('front.common.review-form-procedures',["reviews"=> $category->reviews])
+                    </form>
                 </div>
             </div>
         </div>
