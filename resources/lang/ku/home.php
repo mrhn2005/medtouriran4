@@ -1,7 +1,6 @@
 <?php
 
 return [
-    'arrow' => '&#8592;',
     'our_services' => 'خه زمه تکان ئیمه',
     'services' => 'خزمەتگوزارى',
     'services_sub' => 'We Are Here to Provide You Awesome Service Always',

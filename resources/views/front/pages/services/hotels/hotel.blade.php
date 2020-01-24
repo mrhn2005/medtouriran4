@@ -15,7 +15,7 @@
             @include('front.pages.services.hotels.includes.rating-stars',["star"=>$hotel->star])
         </div>
     </div>
-    <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a> @lang('home.arrow') <a href="{{route('service.hotel.index', $hotel->type)}}">{{$hotel->services()}}</a> @lang('home.arrow') <span>{{$hotel->getTranslatedAttribute('title')}}</span></p>
+    <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a>  <a href="{{route('service.hotel.index', $hotel->type)}}">{{$hotel->services()}}</a>  <span>{{$hotel->getTranslatedAttribute('title')}}</span></p>
 </div><!-- End Page Title Section -->
 <!-- Start Service Section -->
 <div id="hotel-page">

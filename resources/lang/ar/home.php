@@ -1,7 +1,6 @@
 <?php
 
 return [
-    'arrow' => '&#8592;',
     'services' => 'مزايا لدينا',
     'our_services' => 'خدماتنا',
     'services_sub' => '',

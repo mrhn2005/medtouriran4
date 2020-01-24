@@ -16,7 +16,7 @@
         <div class="page-ttl-container">
             <h1>{{$package->getTranslatedAttribute('title')}}</h1>
         </div>
-        <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a> @lang('home.arrow') <a href="{{route('package.index')}}">@lang('home.packages')</a> @lang('home.arrow') <span>{{$package->getTranslatedAttribute('title')}}</span></p>
+        <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a> <a href="{{route('package.index')}}">@lang('home.packages')</a>  <span>{{$package->getTranslatedAttribute('title')}}</span></p>
     </div><!-- End Page Title Section -->
     <!-- Start package List Section -->
         <!-- Start Blog Section -->

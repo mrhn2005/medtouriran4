@@ -411,3 +411,7 @@ a#mobile-menu--lang-switch {
 .page-breadcrumb {
     left: 52%;
 }
+
+.page-breadcrumb>a::after {
+    content: ' \2192';
+}

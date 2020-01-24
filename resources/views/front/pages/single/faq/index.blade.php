@@ -13,7 +13,7 @@
             <div class="page-ttl-container">
                 <h1 class="text-uppercase">@lang('home.faq')</h1>
             </div>
-            <p class="page-breadcrumb"><a href="{{ route('home') }}">@lang('home.home')</a> @lang('home.arrow') <span>@lang('home.faq')</span></p>
+            <p class="page-breadcrumb"><a href="{{ route('home') }}">@lang('home.home')</a>  <span>@lang('home.faq')</span></p>
 {{--        </div>--}}
     </div><!-- End Page Title Section -->
     {!! ViewHelper::faq() !!}

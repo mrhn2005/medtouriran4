@@ -17,8 +17,6 @@ yarn-error.log
 /hooks
 medtouriran.sql
 public/css
-public/js/app.js
-public/js/ltr-all.js
-public/js/rtl-all.js
-public/mix-manifest.json
+public/js
 public/fonts
+public/mix-manifest.json

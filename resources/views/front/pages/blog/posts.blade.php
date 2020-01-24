@@ -13,9 +13,9 @@
         <h1>{{\Request::is('*blogs/tag*')?'#'.$tag->getTranslatedAttribute('title'):__('home.blogs')}}</h1>
     </div>
     <p class="page-breadcrumb">
-        <a href="{{route('home')}}">@lang('home.home')</a> @lang('home.arrow')
+        <a href="{{route('home')}}">@lang('home.home')</a> 
         @if(\Request::is('*blogs/tag*'))
-        <a href="{{route('blog.index')}}">@lang('home.blogs')</a> @lang('home.arrow')
+        <a href="{{route('blog.index')}}">@lang('home.blogs')</a> 
         <span>#{{$tag->getTranslatedAttribute('title')}}</span>
         @else
         <span>@lang('home.blogs')</span>

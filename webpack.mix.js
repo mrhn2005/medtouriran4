@@ -52,3 +52,5 @@ mix
 if (mix.inProduction()) {
     mix.version();
 }
+
+mix.copyDirectory('resources/assets/js/pages', 'public/js/pages');

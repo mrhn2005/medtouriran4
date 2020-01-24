@@ -11,7 +11,7 @@
     <div class="page-ttl-container">
         <h1>@lang('home.destinations')</h1>
     </div>
-    <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a> @lang('home.arrow') <span>@lang('home.destinations')</span></p>
+    <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a>  <span>@lang('home.destinations')</span></p>
 </div><!-- End Page Title Section -->
 <!-- Start Doctor List Section -->
 <div id="destinations-page" class="layer-stretch">

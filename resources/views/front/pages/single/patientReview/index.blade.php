@@ -12,7 +12,7 @@
         <div class="page-ttl-container">
                 <h1>@lang('home.patients_review')</h1>
             </div>
-        <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a> @lang('home.arrow') <span>@lang('home.patients_review')</span></p>
+        <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a>  <span>@lang('home.patients_review')</span></p>
     </div><!-- End Page Title Section -->
     <!-- Start Faq Section -->
     <div class="layer-stretch my-5" id="patients-review-page">

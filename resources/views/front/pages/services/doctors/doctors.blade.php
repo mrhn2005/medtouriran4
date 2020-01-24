@@ -12,7 +12,7 @@
         <div class="page-ttl-container">
             <h1>@lang('home.doctors')</h1>
         </div>
-    <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a> @lang('home.arrow') <span>@lang('home.doctors')</span></p>
+    <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a>  <span>@lang('home.doctors')</span></p>
 
 </div><!-- End Page Title Section -->
 <!-- Start Doctor List Section -->

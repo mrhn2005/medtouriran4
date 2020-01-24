@@ -10,7 +10,7 @@
         <div class="page-ttl-container">
             <h1>{{$category->getTranslatedAttribute('title')}}</h1>
         </div>
-        <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a> @lang('home.arrow') <a href="{{route('procedure.index')}}">@lang('home.procedures')</a> @lang('home.arrow') <span>{{$category->getTranslatedAttribute('title')}}</span></p>
+        <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a>  <a href="{{route('procedure.index')}}">@lang('home.procedures')</a>  <span>{{$category->getTranslatedAttribute('title')}}</span></p>
     </div><!-- End Page Title Section -->
     <!-- Start Blog Section -->
     <div class="layer-stretch" id="procedure-page">
