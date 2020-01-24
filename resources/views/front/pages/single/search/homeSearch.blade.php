@@ -47,7 +47,7 @@
             </div>
             </form>
         </div>
-        <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a> &#8594; <span>@lang('home.search')</span></p>
+        <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a>  <span>@lang('home.search')</span></p>
 
     </div><!-- End Page Title Section -->
     <!-- Start Doctor List Section -->

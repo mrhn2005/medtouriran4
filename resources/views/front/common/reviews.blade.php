@@ -18,11 +18,11 @@
                         <div class="comment-post">
                             {{$review->comment}}
                         </div>
-                        {{-- <ul class="comment-action">
-                            <li><a><i class="fa fa-thumbs-up"></i>Like</a></li>
-                            <li><a><i class="fa fa-thumbs-down"></i>Dislike</a></li>
+                         <ul class="comment-action">
+                            <li><a><i class="fa fa-thumbs-up"></i>Like (0)</a></li>
+                            <li><a><i class="fa fa-thumbs-down"></i>Dislike (0)</a></li>
                             <li><a><i class="fa fa-reply"></i>Reply</a></li>
-                        </ul> --}}
+                        </ul>
                     </div>
                 </div>
             </li>

@@ -13,16 +13,16 @@ $("#testimonial-slider").owlCarousel({
     // autoplayTimeout: 3000,
     autoplayHoverPause: true,
     responsiveClass: true,
-    // nav: true,
+    nav: true,
     navText: [
         '<i class="fa fa-angle-left" aria-hidden="true"></i>',
         '<i class="fa fa-angle-right" aria-hidden="true"></i>'
     ]
     // navContainer: '.owl-theme .owl-nav'
 });
-$('#hm-testimonial .owl-prev').dblclick( () => {
+$('#hm-testimonial .owl-prev').click( () => {
     $('#testimonial-slider.owl-carousel').trigger('prev.owl.carousel');
-    alert('salam');
+    // alert('salam');
 });
 $('#hm-testimonial .owl-next').click( () => {
     $('#testimonial-slider.owl-carousel').trigger('next.owl.carousel');

@@ -19,6 +19,7 @@ mix
     .sass('resources/assets/sass/languages/ru.scss', 'public/css/languages')
     .styles('resources/assets/css/package-timeline.css', 'public/css/package-timeline.css')
     .styles('resources/assets/css/services-timeline.css', 'public/css/services-timeline.css')
+    .styles('resources/assets/css/voyager.css', 'public/css/voyager.css')
     .styles([
         'resources/assets/css/bootstrap4rtl.css',
         'resources/assets/css/variable.css',
@@ -51,3 +52,5 @@ mix
 if (mix.inProduction()) {
     mix.version();
 }
+
+mix.copyDirectory('resources/assets/js/pages', 'public/js/pages');

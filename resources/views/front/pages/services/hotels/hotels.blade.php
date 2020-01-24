@@ -11,7 +11,7 @@
         <div class="page-ttl-container">
             <h1>{{$hotels->first()->services()}}</h1>
         </div>
-        <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a> &#8594; <span>{{$hotels->first()->services()}}</span></p>
+        <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a>  <span>{{$hotels->first()->services()}}</span></p>
 
     </div><!-- End Page Title Section -->
     <!-- Start Doctor List Section -->

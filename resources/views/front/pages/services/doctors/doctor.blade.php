@@ -17,24 +17,26 @@
 
 <!-- Start Doctor List Section -->
 <div id="doctor-page" class="layer-stretch">
-    <div class="layer-wrapper layer-bottom-10">
+    <div class="layer-wrapper layer-bottom-10 layer-bottom-0">
         <div class="row">
-            <div class="col-lg-7">
+            <div class="col-lg-12">
                 <div class="theme-material-card">
                     <div class="row">
-                        <div class="col-sm-5">
+                        <div class="col-sm-4">
                             <div class="theme-img theme-block-hover">
-                            <img class="w-100 lazy" data-src="{{Helper::placeholder(Voyager::image($doctor->thumbnail('medium','avatar')))}}" alt="{{$doctor->getTranslatedAttribute('name')}}">
+                                <img class="lazy" data-src="{{Helper::placeholder(Voyager::image($doctor->thumbnail('medium','avatar')))}}" alt="{{$doctor->getTranslatedAttribute('name')}}">
                             </div>
                         </div>
-                        <div class="col-sm-7">
+                        <div class="col-sm-8">
                             <div class="doctor-name">
-                                <h3>{{$doctor->getTranslatedAttribute('name')}}</h3>
-                                <span class="badge badge-primary">@lang('home.department')</span>
+                                <h3 class="m-0">{{$doctor->getTranslatedAttribute('name')}}</h3>
+                                <span class="badge badge-primary my-3">@lang('home.department')</span>
                                 <p style="font-size: 18px;font-weight: 600;color: var(--title-color2);">
                                     @include('front.common.items', ['items' => $doctor->categories])
                                 </p>
-
+                                <p class="text-muted">
+                                    {{$doctor->getTranslatedAttribute('about')}}
+                                </p>
                             </div>
 {{--                            <div class="doctor-details-extra text-left p-0 pt-4">--}}
 {{--                                 <p class="text-center">--}}
@@ -43,11 +45,11 @@
 {{--                                </p>--}}
 {{--                            </div>--}}
                         </div>
-                        <p class="text-muted p-4 m-0 pb-0">
-                        {{$doctor->getTranslatedAttribute('about')}}
-                        </p>
+                    </div>
+                    <div class="row">
+
                         @if(!empty($doctor->getTranslatedAttribute('education')))
-                        <div class="col-sm-12">
+                        <div class="col-sm-6">
                             <div class="sub-ttl pt-4 font-20">@lang('home.training')</div>
                             <table class="table table-hover">
                                 <thead>
@@ -71,25 +73,24 @@
                             </table>
                         </div>
                         @endif
+                        @if(!empty($doctor->getTranslatedAttribute('skills')))
+                        <div class="col-sm-6">
+                            <div class="sub-ttl font-20 pt-4">@lang('home.skills')</div>
+                            @foreach(json_decode($doctor->getTranslatedAttribute('skills'),TRUE) as $skill)
+                                <div class="doctor-skills">
+                                    <p class="font-14">{{$skill['skill']}} <span class="badge badge-{{Helper::color_badge($loop->index)}} float-rev">{{$skill['percent']}}%</span></p>
+                                    <div class="progress progress-md mb-4">
+                                        <div class="progress-bar progress-bar-striped bg-{{Helper::color_badge($loop->index)}}" role="progressbar" style="width: {{$skill['percent']}}%" aria-valuenow="{{$skill['percent']}}" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            @endforeach
+                        </div>
+                        @endif
                     </div>
                 </div>
             </div>
-            <div class="col-lg-5">
-                @if(!empty($doctor->getTranslatedAttribute('skills')))
-                <div class="theme-material-card">
-                    <div class="px-2">
-                        <div class="sub-ttl font-20 pt-4">@lang('home.skills')</div>
-                        @foreach(json_decode($doctor->getTranslatedAttribute('skills'),TRUE) as $skill)
-                        <div class="doctor-skills">
-                            <p class="font-14">{{$skill['skill']}} <span class="badge badge-{{Helper::color_badge($loop->index)}} float-rev">{{$skill['percent']}}%</span></p>
-                            <div class="progress progress-md mb-4">
-                                <div class="progress-bar progress-bar-striped bg-{{Helper::color_badge($loop->index)}}" role="progressbar" style="width: {{$skill['percent']}}%" aria-valuenow="{{$skill['percent']}}" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        @endforeach
-                    </div>
-                </div>
-                @endif
+{{--            <div class="col-lg-5">--}}
+
 {{--                <div class="theme-material-card">--}}
 {{--                    <div class="sub-ttl">Time Table</div>--}}
 {{--                    <ul class="timetable">--}}
@@ -102,7 +103,7 @@
 {{--                        <li><a class="pull-left"><i class="fa fa-calendar"></i>Fri</a><a class="pull-right">Holiday</a></li>--}}
 {{--                    </ul>--}}
 {{--                </div>--}}
-            </div>
+{{--            </div>--}}
         </div>
         @if(!empty($doctor->testimonal))
         <div class="theme-material-card">
@@ -151,6 +152,7 @@
             </div>
         </div>
         @endif
+        @if(!empty($doctor->related_doctors))
         <div class="theme-material-card">
             <div class="sub-ttl">@lang('home.related_doctors')</div>
             <div class="row">
@@ -186,6 +188,7 @@
                 @endforeach
             </div>
         </div>
+        @endif
     </div>
 </div><!-- End Doctor List Section -->
 

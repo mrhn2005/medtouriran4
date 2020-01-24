@@ -586,4 +586,9 @@ ul .menu-dropdown-2 {
 /*************   BREADCRUMBS    **********************/
 .page-breadcrumb {
     right: 52%;
+    transform: translateX(50%) !important;
+}
+
+.page-breadcrumb>a::after {
+    content: ' \2190';
 }
