@@ -2,7 +2,7 @@
     left: 0 !important;
 }
 #search .mdl-textfield.is-focused .mdl-textfield__label:after{
-    left: 40%;
+    left: 40px;
 }
 .pl-40{
     padding-left: 40px !important;

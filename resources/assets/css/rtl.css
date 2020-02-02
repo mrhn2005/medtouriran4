@@ -6,7 +6,7 @@
     --degree3: 180deg;
 }
 #search .mdl-textfield.is-focused .mdl-textfield__label:after{
-    right: 40%;
+    right: 40px;
 }
 .left-0{
     right: 0 !important;
@@ -597,4 +597,13 @@ ul .menu-dropdown-2 {
 
 .page-breadcrumb>a::after {
     content: ' \2190';
+}
+
+.theme-accordion-control {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+.theme-accordion-container {
+    text-align: right !important;
 }

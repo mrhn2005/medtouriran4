@@ -71,11 +71,11 @@
                         </li>
 
                         <li>
-                            <a href="{{route('single-page',['about-us'])}}" class="mdl-button">@lang('home.about_us') <i class="fa fa-chevron-down"></i></a>
+                            <a href="{{route('single-page',['faq'])}}">@lang('home.faq') <i class="fa fa-chevron-down"></i></a>
                             <ul class="menu-dropdown">
                                 <!--<li><a href="#">Our Team</a></li>-->
 {{--                                <li><a href="{{route('single-page',['contact-us'])}}">@lang('home.contact')</a></li>--}}
-                                <li><a href="{{route('single-page',['faq'])}}">@lang('home.faq')</a></li>
+                                <li><a href="{{route('single-page',['about-us'])}}">@lang('home.about_us')</a></li>
                                 <!--&lt;!&ndash;<li><a href="#">Terms &#38; Conditions</a></li>&ndash;&gt;-->
                                 <!--&lt;!&ndash;<li><a href="#">Privacy Policy</a></li>&ndash;&gt;-->
                             </ul>
@@ -137,12 +137,10 @@
                     <a href="{{route('blog.index')}}" id="mb-menu-blog">@lang('home.blog')</a>
                 </li>
                 <li>
+                    <a href="{{route('single-page',['faq'])}}">@lang('home.faq')</a>
+                </li>
+                <li>
                     <a href="{{route('single-page',['about-us'])}}">@lang('home.about_us') </a>
-{{--                    <ul>--}}
-{{--                        <li><a href="{{route('single-page',['contact-us'])}}">@lang('home.contact')</a></li>--}}
-{{--                        <li><a href="{{route('single-page',['faq'])}}">@lang('home.faq')</a></li>--}}
-{{--                    </ul>--}}
-
                 </li>
             </ul><!-- End Menu Section -->
         </div>
