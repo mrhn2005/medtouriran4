@@ -1,6 +1,21 @@
 <input type="hidden" value="{{App::getLocale()}}" name="locale">
 <div class="sub-ttl layer-ttl-white">@lang('home.write_review')</div>
-<div class="row comment-form">
+<div class="row comment-form py-0">
+    <div class="col-sm-12">
+
+            <textarea name="comment" rows="6" id="package-page--comment-message" style="
+                width: 100%;
+                height: 100%;
+                font-size: 15px;
+                padding: 10px;
+                margin-bottom: 5px 0;
+                border: 1px solid var(--title-color);
+                border-radius: 5px;
+                background-color: #76ffd90f;
+            " placeholder="@lang('home.your_comment')"></textarea>
+
+
+    </div>
     <div class="col-sm-6">
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input">
             <input class="mdl-textfield__input" type="text" name="name" id="hm-booking-form--name" required>
@@ -16,15 +31,8 @@
         </div>
     </div>
     <div class="col-sm-12">
-        <div class="mdl-textfield mdl-js-textfield form-input">
-            <input name="onvis" class="onvis" value="">
-            <textarea class="mdl-textfield__input" name="comment" rows="4" id="package-page--comment-message" ></textarea>
-            <label class="mdl-textfield__label" for="comment-message">@lang('home.your_comment')</label>
-        </div>
-    </div>
-    <div class="col-sm-12">
         <div class="form-submit">
-            <button type="submit" class="button--default button--thirdary" style="width: fit-content">@lang('home.submit_comment')</button>
+            <button type="submit" class="button--default button--thirdary" style="width: fit-content;margin-top:0 !important">@lang('home.submit_comment')</button>
         </div>
     </div>  
 </div>

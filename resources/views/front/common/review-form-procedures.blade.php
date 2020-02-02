@@ -1,4 +1,4 @@
-<div class="theme-material-card">
+<div class="theme-material-card" style="border: 2px solid var(--title-color)!important;">
     @if(count($reviews->where('active', 1))>0)
         <div class="sub-ttl layer-ttl-white">@lang('home.reviews') ({{count($reviews)}})</div>
         <ul class="comment-section">

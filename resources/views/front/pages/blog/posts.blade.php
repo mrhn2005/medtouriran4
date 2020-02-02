@@ -28,36 +28,38 @@
         <div class="row">
             <div class="col-lg-8 text-center" id="myList">
                 @foreach($posts as $post)
-                <div class="theme-material-card blog-full-block myList-item">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="theme-img theme-img-scalerotate">
-                                <img class="lazy" data-src="{{Helper::placeholder(Voyager::image($post->thumbnail('medium')))}}" alt="{{$post->getTranslatedAttribute('title')}}">
+                    <div class="theme-material-card blog-full-block myList-item">
+                        <a href="{{route('blog.show',[$post,$post->slug])}}">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="theme-img theme-img-scalerotate">
+                                        <img class="lazy" data-src="{{Helper::placeholder(Voyager::image($post->thumbnail('medium')))}}" alt="{{$post->getTranslatedAttribute('title')}}">
+                                    </div>
+                                </div>
+                                <div class="col-sm-8 flex-col">
+                                    <div class="blog-full-ttl">
+                                        <h3><span class="myList-title">{{$post->getTranslatedAttribute('title')}}</span></h3>
+                                    </div>
+                                    <div class="blog-full-description">{{$post->getTranslatedAttribute('excerpt')}}</div>
+                                    <div class="blog-full-ftr">
+                                        <span class="pull-left blog-full-author"><i class="fa fa-date"></i>{{$post->created_at->format('d M Y')}}</span>
+                                        <span class="pull-right anchor-icon">
+                                            @lang('home.read_more') <i class="fa fa-arrow-right"></i>
+                                        </span>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-sm-8 flex-col">
-                            <div class="blog-full-ttl">
-                                <h3><a class="myList-title" href="{{route('blog.show',[$post,$post->slug])}}">{{$post->getTranslatedAttribute('title')}}</a></h3>
-                            </div>
-                            <div class="blog-full-description">{{$post->getTranslatedAttribute('excerpt')}}</div>
-                            <div class="blog-full-ftr">
-                                <a class="pull-left blog-full-author"><i class="fa fa-date"></i>{{$post->created_at->format('d M Y')}}</a>
-                                <a href="{{route('blog.show',[$post,$post->slug])}}" class="pull-right anchor-icon">
-                                    @lang('home.read_more') <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
+                        </a>
                     </div>
-                </div>
                 @endforeach
                 {{$posts->links()}}
             </div>
             <div class="col-lg-4 col-sm-12">
                 <div class="theme-material-card text-center" id="search">
-                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input">
-                        <input class="mdl-textfield__input" type="text" id="sidebar-search" onkeyup="searchBar()">
-                        <label class="mdl-textfield__label" for="sidebar-search">@lang('home.enter_keyword')</label>
-                        {{--            <button class="fa fa-search search-button"></button>--}}
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input pl-40">
+                        <input class="mdl-textfield__input pl-40" type="text" id="sidebar-search" onkeyup="searchBar()">
+                        <label class="mdl-textfield__label pl-40" for="sidebar-search">@lang('home.enter_keyword')</label>
+                        <i class="fa fa-search search-button left-0"></i>
                     </div>
                 </div>
                 {!! ViewHelper::blog_sidebar() !!}

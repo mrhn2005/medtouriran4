@@ -5,9 +5,15 @@
     --degree2: -61deg;
     --degree3: 180deg;
 }
-
-
-
+#search .mdl-textfield.is-focused .mdl-textfield__label:after{
+    right: 40%;
+}
+.left-0{
+    right: 0 !important;
+}
+.pl-40{
+    padding-right: 40px !important;
+}
 h1, h2, h3, h4, h5, h6 {
     font-weight: 600 !important;
 }

@@ -2,9 +2,9 @@
     <div class="layer-wrapper">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <div class="theme-material-card">
+                <div class="theme-material-card" style="border: 2px solid var(--title-color)!important;">
                     <div class="sub-ttl layer-ttl-white">@lang('home.contact')</div>
-                    <div class="row comment-form">
+                    <div class="row comment-form py-0">
                         <div class="col-sm-6">
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input">
                                 <input class="mdl-textfield__input" type="text" name="first_name" id="hm-booking-form--name" required>
@@ -45,13 +45,13 @@
                         </div>
                         <div class="col-sm-12">
                             <div class="mdl-textfield mdl-js-textfield form-input">
-                                <textarea class="mdl-textfield__input" name="message" rows="4" id="hm-booking-form--comment-message"></textarea>
+                                <textarea class="mdl-textfield__input" name="message" rows="3" id="hm-booking-form--comment-message"></textarea>
                                 <label class="mdl-textfield__label" for="comment-message">@lang('home.how_can_we')</label>
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-submit">
-                                <button type="submit" class="button--default
+                                <button style="margin-top: 0 !important;" type="submit" class="button--default
                                  button--thirdary">@lang('home.submit')</button>
                             </div>
                         </div>

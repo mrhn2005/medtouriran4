@@ -233,7 +233,14 @@ canvas, iframe, video {
 .blog-full-author .fa ,.anchor-icon{
     color: var(--title-color2);
 }
-
+.blog-full-ttl h3 {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+    margin: 0;
+    font-weight: 500;
+    color: var(--medical-color);
+}
 .theme-pagination li a:hover {
     color: #FFF;
     background: var(--title-color);
@@ -285,6 +292,12 @@ canvas, iframe, video {
     position: relative;
     width: 100%;
     padding: 50px 0;
+    margin: 0;
+}
+.layer-wrapper.less-p {
+    position: relative;
+    width: 100%;
+    padding: 30px 0;
     margin: 0;
 }
 .layer-bottom-0{
@@ -1685,6 +1698,7 @@ input{
 .mdl-textfield__label::after, .mdl-selectfield__label::after {
     background-color: var(--title-color);
 }
+
 .mdl-textfield--floating-label.is-focused .mdl-textfield__label, .mdl-textfield--floating-label.is-dirty .mdl-textfield__label, .mdl-textfield--floating-label.has-placeholder .mdl-textfield__label, .mdl-selectfield--floating-label.is-focused .mdl-selectfield__label, .mdl-selectfield--floating-label.is-dirty .mdl-selectfield__label {
     color: var(--title-color);
 }
@@ -1852,9 +1866,12 @@ input:-internal-autofill-selected {
 
 /****END HOME SEARCH*****/
 .search-button {
-    color: #fff;
-    background: var(--title-color2)!important;
+    color: #ffffff;
+    background: var(--title-color2);
     border-radius: 5px;
+    padding: 7px;
+    left: 0;
+    display: block;
 }
 /****START  PACKAGES*****/
 #packages-page .packages-page--card {

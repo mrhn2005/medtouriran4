@@ -95,7 +95,7 @@
     </div><!-- End Doctor Section -->
     @endif
     <div class="layer-stretch">
-        <div class="layer-wrapper">
+        <div class="layer-wrapper less-p">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <form action="{{route('comment_store')}}" class="form-horizontal cform-2" method="post">
