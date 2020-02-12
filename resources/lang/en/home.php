@@ -52,6 +52,7 @@ return [
     "phone_number"=>"Phone Number",
     "submit"=>"Submit",
     "submit_comment"=>"Submit Comment",
+    "submit_reply"=>"Submit Reply",
     "write_review"=>"Write a Review",
     "gallery"=>"Gallery",
 
@@ -184,5 +185,7 @@ return [
     "more_info"=>"More Info",
 
     "about_us_desc"=>"MedtourIran is an organization established in Tehran, which provides A to Z services for medical tourists in Iran. The verified medical doctors, high quality accommodation and transfer services are the main values of MedtourIran.",
-    "enter_keyword"=>"Enter Any Keyword"
+  
+    "enter_keyword"=>"Enter Any Keyword",
+    "your_reply"=>"Write your reply..."
 ];

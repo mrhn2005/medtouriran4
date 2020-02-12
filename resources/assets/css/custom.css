@@ -3232,7 +3232,7 @@ button:focus {
 .button--thirdary{
     color: var(--title-color)!important;
     border: 2px solid var(--title-color) !important;
-    margin-top: 30px !important;
+    margin-top: 30px;
 }
 .button--thirdary:hover{
     color: white!important;
@@ -3628,12 +3628,13 @@ button:focus {
 }
 .mdl-textfield.mdl-textfield--floating-label{
     height: 74px;
-    width: 90%;
-    margin: 0 5% 10px;
+    /* width: 90%;
+    margin: 0 5% 10px; */
 }
 .layer-ttl-white.sub-ttl{
     font-size: 28px;
     text-transform: capitalize;
+    font-weight: 600;
 }
 
 /********Comment section********/
@@ -3645,7 +3646,7 @@ button:focus {
 }
 .comment{
     display: flex;
-    margin-bottom: 45px;
+    margin-bottom: 25px;
     flex-wrap: wrap;
 }
 .info{
@@ -3669,7 +3670,7 @@ button:focus {
 }
 .avatar{
     width: 8%;
-    padding: 9px 12px 10px 12px;
+    padding: 0px 15px 0px;
 }
 .avatar img {
     width: 100%;
@@ -3696,8 +3697,8 @@ button:focus {
     border-radius: 50%;
     background-color: #ffffff;
     border: 2px solid #f3f3f3;
-    left: -10px;
-    top: 30px;
+    left: -11px;
+    top: 18px;
 }
 .author-comment .comment-text:after {
     content: '';
@@ -3707,8 +3708,8 @@ button:focus {
     border-radius: 50%;
     background-color: #ffffff;
     border: 2px solid var(--title-color2);
-    right: -10px;
-    top: 30px;
+    right: -11px;
+    top: 18px;
 }
 .comment.author-comment .comment-text {
     border-color: var(--title-color2);
@@ -3733,6 +3734,30 @@ button:focus {
 
 .comment.author-comment p{
     order: 1;
+}
+.comment-img img {
+    border: 3px solid var(--title-color);
+    border-radius: 50%;
+    /* margin-left: 8px; */
+}
+.comment-form.reply-card {
+    transition: 1s all;
+    display: none;
+    border: 2px solid var(--title-color);
+    margin: 10px;
+    padding: 20px 5px;
+    border-radius: 15px;
+}
+
+textarea#package-page--comment-message{
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 5px 0;
+    border: 1px solid var(--title-color);
+    border-radius: 5px;
+    background-color: #76ffd90f;
 }
 
 /**************** faq page************/
@@ -3810,4 +3835,8 @@ button:focus {
 }
 .faq-filter--item.city-filter.active .theme-accordion-control>i{
     color: white !important;
+}
+
+.paragraph-medium .fa {
+    color: var(--title-color) !important;
 }

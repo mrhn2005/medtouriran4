@@ -57,7 +57,7 @@
             <div class="col-lg-4 col-sm-12">
                 <div class="theme-material-card text-center" id="search">
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input pl-40">
-                        <input class="mdl-textfield__input pl-40" type="text" id="sidebar-search" onkeyup="searchBar()">
+                        <input class="mdl-textfield__input" type="text" id="sidebar-search" onkeyup="searchBar()">
                         <label class="mdl-textfield__label pl-40" for="sidebar-search">@lang('home.enter_keyword')</label>
                         <i class="fa fa-search search-button left-0"></i>
                     </div>

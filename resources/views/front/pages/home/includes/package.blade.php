@@ -12,7 +12,7 @@
                         data-bg="linear-gradient(rgba(0, 0, 0, 0.35),rgba(0, 0, 0, 0.1)),
                         url({{Voyager::image($package->main_image)}})" 
                         style="background-size:cover;background-repeat: no-repeat;background-position:center">
-                    <div class="hm-packages--overlay"></div>
+                        <div class="hm-packages--overlay"></div>
                         <div class="hm-packages--title">
                             <h2>{{$package->getTranslatedAttribute('title')}}</h2>
                             <p>@lang("home.package_in")</p>

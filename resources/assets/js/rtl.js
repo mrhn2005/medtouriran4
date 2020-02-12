@@ -10,23 +10,23 @@ $("#testimonial-slider").owlCarousel({
     rtl:true,
     loop: true,
     smartSpeed: 1000,
-    // autoplayTimeout: 3000,
+    autoplayTimeout: 3000,
     autoplayHoverPause: true,
     responsiveClass: true,
     nav: true,
+    navContainer: '.owl-nav',
     navText: [
-        '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-        '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+        '<i class="fa fa-angle-left"></i>',
+        '<i class="fa fa-angle-right"></i>'
     ]
-    // navContainer: '.owl-theme .owl-nav'
 });
-$('#hm-testimonial .owl-prev').click( () => {
-    $('#testimonial-slider.owl-carousel').trigger('prev.owl.carousel');
-    // alert('salam');
-});
-$('#hm-testimonial .owl-next').click( () => {
-    $('#testimonial-slider.owl-carousel').trigger('next.owl.carousel');
-});
+// $('#hm-testimonial .owl-prev').click( () => {
+//     $('#testimonial-slider.owl-carousel').trigger('prev.owl.carousel');
+//     // alert('salam');
+// });
+// $('#hm-testimonial .owl-next').click( () => {
+//     $('#testimonial-slider.owl-carousel').trigger('next.owl.carousel');
+// });
 
 //Home Doctor Slider
 $("#hm-packages-slider").owlCarousel({

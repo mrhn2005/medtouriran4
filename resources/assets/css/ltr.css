@@ -420,3 +420,6 @@ a#mobile-menu--lang-switch {
 .page-breadcrumb>a::after {
     content: ' \2192';
 }
+.comment-img img {
+    margin-left: 8px;
+}

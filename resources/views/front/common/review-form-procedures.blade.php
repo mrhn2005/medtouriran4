@@ -1,5 +1,5 @@
-<div class="theme-material-card" style="border: 2px solid var(--title-color)!important;">
-    @if(count($reviews->where('active', 1))>0)
+@if(count($reviews->where('active', 1))>0)
+    <div class="theme-material-card">
         <div class="sub-ttl layer-ttl-white">@lang('home.reviews') ({{count($reviews)}})</div>
         <ul class="comment-section">
             @foreach($reviews->where('active', 1)->where('parent_id',null) as $review)
@@ -31,6 +31,8 @@
                 @endif
             @endforeach
         </ul>
-    @endif
+    </div>
+@endif
+<div class="theme-material-card" style="border: 2px solid var(--title-color)!important;">
     @include('front.common.review-form-content')
 </div>
