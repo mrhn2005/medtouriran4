@@ -47,7 +47,7 @@ class Helper
 
     public static function remove_space($name)
     {
-        return preg_replace('/\s+/', '', $name);
+        return preg_replace('/[\s,]+/', '', $name);
     }
 
     public static function color_badge($index)

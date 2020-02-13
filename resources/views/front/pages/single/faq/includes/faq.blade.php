@@ -6,7 +6,7 @@
             <div class="col-lg-8 text-center">
                 <div class="theme-accordion-container" id="myList">
                     @foreach ($faqs as $faq)
-                        <div class="theme-accordion myList-item c-filter A C">
+                        <div class="theme-accordion myList-item c-filter {{$faq->main_category()}} @foreach ($faq->categories as $category){{Helper::remove_space($category->title)}} @endforeach">
                             <div class="theme-accordion-hdr">
                                 <h4 class="myList-title"><i class="fa fa-question"></i> {{$faq->getTranslatedAttribute('question')}}</h4>
                                 <div class="theme-accordion-control"><i class="fa fa-plus"></i></div>
@@ -34,13 +34,16 @@
                             <div class="theme-accordion-hdr faq-filter--item city-filter active text-center" data-filter="all">Show All</div>
                         </div>
                         <div class="theme-accordion w-100">
-                            <div class="theme-accordion-hdr faq-filter--item city-filter" data-filter="A">Eye care
+                            @foreach($main_categories as $main_category)
+                            <div class="theme-accordion-hdr faq-filter--item city-filter" data-filter="{{Helper::remove_space($main_category->title)}}">{{$main_category->getTranslatedAttribute('title')}}
                                 <div class="theme-accordion-control"><i class="fa fa-plus"></i></div>
                             </div>
                             <div class="theme-accordion-bdy">
-                                <div class="faq-filter--item city-filter" data-filter="B">Eye care</div>
-                                <div class="faq-filter--item city-filter" data-filter="C">Eye care</div>
+                                @foreach ($main_category->children as $category)
+                                    <div class="faq-filter--item city-filter" data-filter="{{Helper::remove_space($category->title)}}">{{$category->getTranslatedAttribute('title')}}</div>
+                                @endforeach 
                             </div>
+                            @endforeach
                         </div>
                     </div>
 
