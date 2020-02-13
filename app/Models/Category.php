@@ -54,4 +54,9 @@ class Category extends Cat
     {
         return $this->morphMany('App\Models\Review', 'reviewable');
     }
+    
+    public function faqs()
+    {
+        return $this->belongsToMany('App\Models\Category', 'category_faq');
+    }
 }
