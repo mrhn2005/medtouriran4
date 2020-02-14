@@ -8,7 +8,6 @@ $('#video-sample-frame--player-close').click(function() {
     $(".video-sample-frame-player").hide(500);
 });
 $(window).resize(function () {
-    // var frameImage = $('img.video-sample-frame--img');
     if ($(window).width() > 992) {
         $('img.video-sample-frame--img').attr("data-src","/images/video_review/medtour.png");
     } else {
@@ -18,7 +17,6 @@ $(window).resize(function () {
 
 var owl = $('#testimonial-slider');
 owl.owlCarousel();
-// Listen to owl events:
 owl.on('changed.owl.carousel', function(event) {
     var player =$('#testimonial-slider .owl-stage-outer .owl-stage .active .video-sample-frame iframe');
     var videoURL = player.prop('src');

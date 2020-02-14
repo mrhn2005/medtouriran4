@@ -63,6 +63,6 @@
     <script>
         var site_video = "{{setting('site.site_video')}}";
     </script>
-    <script src="{{asset('js/pages/home.js')}}" defer></script>
+    <script src="{{mix('js/pages/home.js')}}" defer></script>
 @endsection
 

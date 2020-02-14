@@ -35,6 +35,7 @@ mix
     ], 'public/css/ltr-all.css')
     
     .js('resources/assets/js/app.js', 'public/js')
+    .js('resources/assets/js/pages/home.js', 'public/js/pages/home.js')
     .scripts([
         'resources/assets/js/bootstrap4rtl.min.js',
         'resources/assets/js/rtl.js',
