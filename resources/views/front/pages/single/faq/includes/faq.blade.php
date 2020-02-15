@@ -3,24 +3,6 @@
 <div class="layer-stretch" id="faq-page">
     <div class="layer-wrapper text-center">
         <div class="row">
-            <div class="col-lg-8 text-center">
-                <div class="theme-accordion-container" id="myList">
-                    @foreach ($faqs as $faq)
-                        <div class="theme-accordion myList-item c-filter {{$faq->main_category()}} @foreach ($faq->categories as $category){{Helper::remove_space($category->title)}} @endforeach">
-                            <div class="theme-accordion-hdr">
-                                <h4 class="myList-title"><i class="fa fa-question"></i> {{$faq->getTranslatedAttribute('question')}}</h4>
-                                <div class="theme-accordion-control"><i class="fa fa-plus"></i></div>
-                            </div>
-                            <div class="theme-accordion-bdy">
-                                <div class="paragraph-medium paragraph-black">
-
-                                    {!!$faq->getTranslatedAttribute('answer')!!}
-                                </div>
-                            </div>
-                        </div>
-                    @endforeach
-                </div>
-            </div>
             <div class="col-lg-4 col-sm-12">
                 <div class="theme-material-card text-center px-0 pb-0" id="search">
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input pl-40">
@@ -50,6 +32,25 @@
                 </div>
 
             </div>
+            <div class="col-lg-8 text-center">
+                <div class="theme-accordion-container" id="myList">
+                    @foreach ($faqs as $faq)
+                        <div class="theme-accordion myList-item c-filter all {{$faq->main_category()}} @foreach ($faq->categories as $category){{Helper::remove_space($category->title)}} @endforeach">
+                            <div class="theme-accordion-hdr">
+                                <h4 class="myList-title"><i class="fa fa-question"></i> {{$faq->getTranslatedAttribute('question')}}</h4>
+                                <div class="theme-accordion-control"><i class="fa fa-plus"></i></div>
+                            </div>
+                            <div class="theme-accordion-bdy">
+                                <div class="paragraph-medium paragraph-black">
+
+                                    {!!$faq->getTranslatedAttribute('answer')!!}
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+
         </div>
 
     </div>

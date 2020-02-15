@@ -195,8 +195,8 @@ button{
     margin: 30px 0;
 }
 
-#template-content .template-img img,#template-content img{
-    min-width: 90%;
+#template-content .template-img img,#template-content img,.blog-post p img{
+    min-width: 90% !important;
     /*height: 100%;*/
     max-width: 100%;
     margin: 3% 0;
@@ -205,7 +205,7 @@ button{
     display: block;
     transition: 1s all;
 }
-#template-content .template-img img, #template-content img:hover {
+#template-content .template-img img, #template-content img:hover,.blog-post p img:hover {
     border-radius: 50%;
 }
 
@@ -3759,7 +3759,14 @@ textarea#package-page--comment-message{
     border-radius: 5px;
     background-color: #76ffd90f;
 }
-
+.comment-list .theme-img{
+    margin: 0 !important
+}
+.theme-material-card .theme-img {
+    width: 67px!important;
+    height: 67px !important;
+    padding: 0px !important;
+}
 /**************** faq page************/
 
 
@@ -3813,7 +3820,7 @@ textarea#package-page--comment-message{
 .faq-filter--item .theme-accordion-control {
     position: absolute;
     top: 12px;
-    right: 25px;
+    /* right: 25px; */
 }
 .faq-filter--item .theme-accordion-control .fa {
     font-size: 20px;
@@ -3839,4 +3846,14 @@ textarea#package-page--comment-message{
 
 .paragraph-medium .fa {
     color: var(--title-color) !important;
+}
+#faq-page .mdl-textfield {
+    min-width: 90%;
+    max-width: 100%;    
+}
+#faq-page .theme-accordion-bdy .paragraph-medium.paragraph-black *{
+    font-family: Tajawal,sans-serif!important;
+    color: #535353;
+    font-size: 16px !important;
+    line-height: 1.8 !important;
 }

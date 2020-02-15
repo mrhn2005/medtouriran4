@@ -331,6 +331,7 @@ a#mobile-menu--lang-switch {
 
 .hm-packages--button{
     right: 28px;
+    left: auto;
 }
 .hm-packages--button div{
     background: var(--button-gradient-cosmetic);
@@ -349,6 +350,7 @@ a#mobile-menu--lang-switch {
 
 #package-page--packages-slider .package-page--packages-title{
     right: 40px;
+    left: auto;
     text-align: right;
 }
 #package-page--packages-slider .package-page--packages-title>h2 {
@@ -356,17 +358,20 @@ a#mobile-menu--lang-switch {
 }
 #package-page--packages-slider .package-page--packages-price{
     left: -15px;
+    right: auto;
 }
 #package-page--packages-slider .package-page--packages-price>h3 {
     text-align: right;
 }
 #package-page--packages-slider .package-page--packages-list{
     right: 40px;
+    left: auto;
     font-size: 14px;
 }
 
 .package-page--packages-button{
     right: 28px;
+    left: auto;
 }
 .menu > li > a {
     font-size: 16px !important;
@@ -377,6 +382,7 @@ a#mobile-menu--lang-switch {
 }
 .menu li li a::before {
     right: 0!important;
+    left: auto;
 }
 .menu-dropdown li {
     padding: 5px 10px 5px 5px!important;
@@ -393,15 +399,18 @@ a#mobile-menu--lang-switch {
 .menu-dropdown .menu-dropdown {
     top: 0;
     left: -101%!important;
+    right: auto;
     margin-right: 3px!important;
     margin-left: 0!important
 }
 ul .menu-dropdown-2 {
     right: 99% !important;
+    left: auto;
 }
 
 .menu-megamenu, .menu-dropdown {
     right: 5%!important;
+    left: auto;
     text-align: right !important;
 }
 #header-1 .menu a,#mobile-menu--hdr .menu a {
@@ -430,6 +439,7 @@ ul .menu-dropdown-2 {
 
 .blog-card-date {
     right: 0!important;
+    left: auto;
     border-bottom-left-radius: 50%!important;
     border-bottom-right-radius: 0!important;
 }
@@ -461,6 +471,7 @@ ul .menu-dropdown-2 {
 
 .mdl-textfield__error , .mdl-textfield__info{
     left: 0!important;
+    right: auto;
     text-align: left!important;
 }
 
@@ -475,6 +486,7 @@ ul .menu-dropdown-2 {
 }
 .form-input-icon .fa {
     right: 0!important;
+    left: auto;
 }
 
 .mdl-selectfield__label {
@@ -559,6 +571,7 @@ ul .menu-dropdown-2 {
 }
 #doctors-page .doctors-page-speciality{
     left: 15px;
+    right: auto;
     top: 15px;
 }
 #doctors-page .doctor-page-details-extra img{
@@ -570,6 +583,7 @@ ul .menu-dropdown-2 {
 }
 #packages-page .packages-page--card .packages-page--title {
     right: 45px;
+    left: auto;
     text-align: right;
 }
 #packages-page .packages-page--card .packages-page--cities span {
@@ -595,6 +609,7 @@ ul .menu-dropdown-2 {
 /*************   BREADCRUMBS    **********************/
 .page-breadcrumb {
     right: 52%;
+    left: auto;
     transform: translateX(50%) !important;
 }
 
@@ -604,11 +619,16 @@ ul .menu-dropdown-2 {
 
 .theme-accordion-control {
     left: 15px !important;
+    right: auto;
 }
 .theme-accordion-container {
     text-align: right !important;
 }
 
-.comment-img img {
-    margin-right: 8px;
+/* .comment-img img {
+    margin-right: 4px;
+} */
+.faq-filter--item .theme-accordion-control {
+    left: 25px !important;
+    right: auto;
 }
