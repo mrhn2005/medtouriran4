@@ -632,3 +632,9 @@ ul .menu-dropdown-2 {
     left: 25px !important;
     right: auto;
 }
+.comment.author-comment .info,.comment.author-comment .info p {
+    text-align: right!important;
+}
+.comment.user-comment .info,.comment.user-comment .info p {
+    text-align: left!important;
+}
