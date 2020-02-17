@@ -2877,6 +2877,9 @@ button:focus {
 .owl-dots{
     margin-top: 45px;
 }
+.gallery-owl-carousel .owl-dots{
+    margin-top: 0 !important;
+}
 .owl-carousel>.owl-nav {
     display: none !important;
 }
@@ -2951,7 +2954,7 @@ button:focus {
     overflow: hidden;
 }
 .owl-carousel .theme-block-picture img {
-    height: auto !important;
+    min-height: auto !important;
     width: 100% !important;
     overflow: hidden;
 }
@@ -3762,7 +3765,7 @@ textarea#package-page--comment-message{
 .comment-list .theme-img{
     margin: 0 !important
 }
-.theme-material-card .theme-img {
+.theme-material-card .comment-img .theme-img {
     width: 67px!important;
     height: 67px !important;
     padding: 0px !important;
