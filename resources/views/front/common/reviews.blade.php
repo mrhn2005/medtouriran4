@@ -86,10 +86,8 @@
         
         var x = document.getElementById("replyBox-"+ idBox);
         if (x.style.display === "none") {
-            console.log('here');
-            x.style.display = "block";
+            x.style.display = "flex";
         } else {
-            console.log('here2');
             x.style.display = "none";
         }
     }
