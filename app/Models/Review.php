@@ -25,4 +25,9 @@ class Review extends Model
     {
         return $this->hasOne('App\Models\Review', 'parent_id');
     }
+
+    public function replies()
+    {
+        return $this->hasMany('App\Models\Review', 'parent_id');
+    }
 }

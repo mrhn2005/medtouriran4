@@ -27,6 +27,9 @@
     <div class="layer-wrapper">
         <div class="row">
             <div class="col-lg-8 text-center" id="myList">
+                @if($posts->count()<1)
+                    SORRY YOUR SEARCH HAS NO RESULTS.
+                @endif
                 @foreach($posts as $post)
                     <div class="theme-material-card blog-full-block myList-item">
                         <a href="{{route('blog.show',[$post,$post->slug])}}">
@@ -55,13 +58,15 @@
                 {{$posts->links()}}
             </div>
             <div class="col-lg-4 col-sm-12">
-                <div class="theme-material-card text-center" id="search">
-                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input pl-40">
-                        <input class="mdl-textfield__input" type="text" id="sidebar-search" onkeyup="searchBar()">
-                        <label class="mdl-textfield__label pl-40" for="sidebar-search">@lang('home.enter_keyword')</label>
-                        <i class="fa fa-search search-button left-0"></i>
+                <form action="{{route('blog-search')}}" method="get">
+                    <div class="theme-material-card text-center" id="search">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input pl-40">
+                            <input class="mdl-textfield__input" type="text" name="query" id="sidebar-search" value="{{Request::get('query')}}">
+                            <label class="mdl-textfield__label pl-40" for="sidebar-search">@lang('home.enter_keyword')</label>
+                            <i class="fa fa-search search-button left-0"></i>
+                        </div>
                     </div>
-                </div>
+                </form>
                 {!! ViewHelper::blog_sidebar() !!}
             </div>
 
@@ -73,30 +78,4 @@
 @csrf
 @include('front.common.form')
 </form>
-@endsection
-
-
-
-@section('js')
-    <script>
-        function searchBar() {
-            // Declare variables
-            var input, filter, ul, li, a, i, txtValue;
-            input = document.getElementById('sidebar-search');
-            filter = input.value.toUpperCase();
-            ul = document.getElementById("myList");
-            li = ul.getElementsByClassName('myList-item');
-
-            // Loop through all list items, and hide those who don't match the search query
-            for (i = 0; i < li.length; i++) {
-                a = li[i].getElementsByClassName("myList-title")[0];
-                txtValue = a.textContent || a.innerText;
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    li[i].style.display = "";
-                } else {
-                    li[i].style.display = "none";
-                }
-            }
-        }
-    </script>
 @endsection

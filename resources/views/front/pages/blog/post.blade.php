@@ -33,7 +33,7 @@
                 <div class="theme-material-card">
                     <ul class="blog-detail">
                         <li><i class="fa fa-calendar-o"></i>{{$single_post->created_at->format('d M Y')}}</li>
-                        <li><i class="fa fa-comment-o"></i>{{count($single_post->reviews)}}</li>
+                        <li><i class="fa fa-comment-o"></i>{{$single_post->reviews()->where('active', 1)->where('parent_id',null)->count()}}</li>
                     </ul>
                     <h3 class="font-weight-700 template-title">@lang('home.template_list')</h3>
                     {!! $single_post->getTranslatedAttribute('body') !!}
