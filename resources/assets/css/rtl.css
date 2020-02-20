@@ -638,3 +638,6 @@ ul .menu-dropdown-2 {
 .comment.user-comment .info,.comment.user-comment .info p {
     text-align: left!important;
 }
+.comment-img {
+    padding-right: 0 !important
+}

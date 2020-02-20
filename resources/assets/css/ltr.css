@@ -436,3 +436,6 @@ a#mobile-menu--lang-switch {
     right: 25px !important;
     left: auto;
 }
+.comment-img {
+    padding-left: 0 !important
+}

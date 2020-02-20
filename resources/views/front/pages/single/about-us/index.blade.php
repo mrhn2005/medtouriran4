@@ -6,48 +6,11 @@
 @endsection
 
 @section('style')
-    <style>
-        .service-card {
-            margin: 15px 0px 0px 0 !important;
-        }
-        .layer-wrapper {
-            padding: 30px 0 !important;
-        }
-        @media only screen and (min-width: 1300px){
-            #hm-about::after {
-                content: '';
-                position: absolute;
-                top: 173px;
-                left: 94vw;
-            }
-            #hm-about::before {
-                content: '';
-                position: absolute;
-                top: 173px;
-                right: 94vw;
-            }
-        }
-        @media only screen and (max-width: 1299px) and (min-width: 993px){
-            #hm-about::before {
-                content: '';
-                position: absolute;
-                top: 175px;
-                right: 98vw;
-            }
-            #hm-about::after {
-                content: '';
-                position: absolute;
-                top: 175px;
-                left: 98vw;
-            }
-        }
-        .text-center.mx-auto.d-block{
-            display: none!important;
-        }
-    </style>
+
 @endsection
 
 @section('content')
+<span id="about-page">
     <div class="page-ttl about-bg">
         <div class="page-ttl-container">
             <h1>@lang('home.about_us')</h1>
@@ -62,10 +25,7 @@
                     <img src="/images/logo-color.png" alt="MedTourIran Logo">
                 </div>
                 <div class="col-md-7 hm-service-right">
-                    <p style="    color: var(--bold-text);
-    font-size: 17px;
-    line-height: 36px;
-    padding: 0 20px;vertical-align: middle;position: relative;top: 50%;transform: translateY(-50%);">
+                    <p>
                         @lang('home.about_us_desc')
                     </p>
 
@@ -102,5 +62,6 @@
             <div class="paragraph-medium paragraph-black">@lang('home.location')</div>
         </div>
     </div><!-- End Google Map Section -->
+</span>
 @endsection
 

@@ -23,7 +23,7 @@
     </p>
 </div><!-- End Page Title Section -->
 <!-- Start Blog List Section -->
-<div class="layer-stretch">
+<div class="layer-stretch" id="blogs-page">
     <div class="layer-wrapper">
         <div class="row">
             <div class="col-lg-8 text-center" id="myList">
@@ -63,7 +63,7 @@
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input pl-40">
                             <input class="mdl-textfield__input" type="text" name="query" id="sidebar-search" value="{{Request::get('query')}}">
                             <label class="mdl-textfield__label pl-40" for="sidebar-search">@lang('home.enter_keyword')</label>
-                            <i class="fa fa-search search-button left-0"></i>
+                            <button type="submit"><i class="fa fa-search search-button left-0"></i></button>
                         </div>
                     </div>
                 </form>
