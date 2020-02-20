@@ -18,6 +18,9 @@
                         <div class="comment-post">
                             {{$review->comment}}
                         </div>
+                        <ul class="comment-action">
+                            <li><a><i class="fa fa-reply"></i>Reply</a></li>
+                        </ul>
                     </div>
                 </div>
                 <div class="comment-form reply-card row" id="replyBox-{{$review->name}}">

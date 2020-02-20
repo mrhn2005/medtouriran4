@@ -23,7 +23,7 @@
     </p>
 </div><!-- End Page Title Section -->
 <!-- Start Blog List Section -->
-<div class="layer-stretch">
+<div class="layer-stretch" id="blogs-page">
     <div class="layer-wrapper">
         <div class="row">
             <div class="col-lg-8 text-center" id="myList">

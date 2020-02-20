@@ -10,7 +10,7 @@
         <div class="page-ttl-container">
             <h1>{{$doctor->getTranslatedAttribute('name')}}</h1>
         </div>
-    <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a> &#8594; <a href="{{ route('service.doctor.index') }}">@lang('home.doctors')</a> &#8594; <span>{{$doctor->getTranslatedAttribute('name')}}</span></p>
+    <p class="page-breadcrumb"><a href="{{route('home')}}">@lang('home.home')</a> <a href="{{ route('service.doctor.index') }}">@lang('home.doctors')</a>  <span>{{$doctor->getTranslatedAttribute('name')}}</span></p>
 
 </div>
 <!-- End Page Title Section -->
