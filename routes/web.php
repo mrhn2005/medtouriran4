@@ -21,6 +21,7 @@ Route::middleware(['localized'])
     
     
     Route::get('/search','Front\HomeController@home_search')->name('homesearch');
+    Route::get('/blogs/search','Front\HomeController@blog_search')->name('blog-search');
     
     Route::get('/services','Front\HomeController@services')->name('service');
 

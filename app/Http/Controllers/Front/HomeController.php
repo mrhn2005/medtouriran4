@@ -250,6 +250,13 @@ class HomeController extends Controller
         return view('front.pages.single.search.homeSearch', compact('categories', 'packages', 'cities'));
     }
 
+    public function blog_search(Request $request)
+    {
+        $posts=Post::where('title', 'like', '%' . $request->input('query') . '%')->withTranslations(App::getLocale())->with('authorId')->orderBy('created_at', 'desc')->paginate($this->post_per_blog);
+        return view('front.pages.blog.posts', compact('posts'));
+          
+    }
+
     public function medicalTourism()
     {
         return view('front.pages.medicalTourism.about.aboutMedicalTourism');
