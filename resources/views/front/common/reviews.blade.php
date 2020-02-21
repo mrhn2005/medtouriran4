@@ -28,7 +28,7 @@
                 <input type="hidden" value="{{$review->id}}" name="parent_id">
                 <div class="comment-form reply-card row" id="replyBox-{{$review->id}}" style="display:none">
                     <div class="col-sm-12">
-                        <textarea name="comment" rows="4" id="reply-message" placeholder="@lang('home.your_reply')"></textarea>
+                        <textarea name="comment" rows="4" id="reply-message" placeholder="@lang('home.your_reply')" required></textarea>
                     </div>
                     <div class="col-sm-6">
                         <div class="mdl-textfield">

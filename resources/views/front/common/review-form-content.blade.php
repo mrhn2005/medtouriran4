@@ -2,7 +2,7 @@
 <div class="sub-ttl layer-ttl-white">@lang('home.write_review')</div>
 <div class="row comment-form py-0">
     <div class="col-sm-12">
-        <textarea name="comment" rows="4" id="comment-message" placeholder="@lang('home.your_comment')"></textarea>
+        <textarea name="comment" rows="4" id="comment-message" placeholder="@lang('home.your_comment')" required></textarea>
     </div>
     <div class="col-sm-6">
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input">
