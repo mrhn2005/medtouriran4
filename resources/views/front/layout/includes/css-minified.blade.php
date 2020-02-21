@@ -12,5 +12,5 @@
     <noscript><link rel="stylesheet" href="{{mix('css/rtl-all.css')}}"></noscript>
 @endif
 
-<link rel="stylesheet" rel="preload" href="{{mix('css/languages/'.App::getLocale().'.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="{{mix('css/languages/'.App::getLocale().'.css')}}"></noscript>
+<link rel="stylesheet" rel="preload" href="{{mix('css/locales/'.App::getLocale().'.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{mix('css/locales/'.App::getLocale().'.css')}}"></noscript>

@@ -13,10 +13,10 @@ const mix = require('laravel-mix');
  */
 mix
     .sass('resources/assets/sass/app.scss', 'public/css')
-    .sass('resources/assets/sass/languages/en.scss', 'public/css/languages')
-    .sass('resources/assets/sass/languages/ar.scss', 'public/css/languages')
-    .sass('resources/assets/sass/languages/ku.scss', 'public/css/languages')
-    .sass('resources/assets/sass/languages/ru.scss', 'public/css/languages')
+    .sass('resources/assets/sass/locales/en.scss', 'public/css/locales')
+    .sass('resources/assets/sass/locales/ar.scss', 'public/css/locales')
+    .sass('resources/assets/sass/locales/ku.scss', 'public/css/locales')
+    .sass('resources/assets/sass/locales/ru.scss', 'public/css/locales')
     .styles('resources/assets/css/package-timeline.css', 'public/css/package-timeline.css')
     .styles('resources/assets/css/services-timeline.css', 'public/css/services-timeline.css')
     .styles('resources/assets/css/voyager.css', 'public/css/voyager.css')
